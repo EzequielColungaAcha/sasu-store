@@ -1,0 +1,44 @@
+---
+import site from "../data/site.json";
+import { whatsappHref } from "../lib/catalog";
+
+const consult = whatsappHref(
+  site.whatsapp,
+  `Hola, quiero consultar por productos de ${site.name}`,
+);
+---
+
+<header
+  class="sticky top-0 z-40 border-b border-line/80 bg-ink/85 backdrop-blur-md"
+>
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a href="/" class="flex items-center gap-3" aria-label={`${site.name} | ${site.tagline}`}>
+      <img
+        src={site.logo}
+        alt=""
+        width="56"
+        height="56"
+        class="h-11 w-11 rounded-xl object-contain sm:h-12 sm:w-12"
+      />
+      <span class="leading-tight">
+        <span class="block font-display text-3xl tracking-[0.14em] text-acid">{site.name}</span>
+        <span class="hidden text-[11px] font-semibold uppercase tracking-[0.16em] text-fog sm:block">
+          {site.tagline}
+        </span>
+      </span>
+    </a>
+    <nav class="flex items-center gap-2 text-sm font-semibold sm:gap-4">
+      <a href="/#catalogo" class="rounded-full px-3 py-2 text-paper/90 hover:bg-raised hover:text-acid">
+        Productos
+      </a>
+      <a
+        href={consult}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-full bg-acid px-3 py-2 text-ink hover:bg-paper"
+      >
+        WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>

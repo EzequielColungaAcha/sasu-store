@@ -1,0 +1,30 @@
+---
+import { formatARS } from "../lib/catalog";
+
+interface Props {
+  price: number;
+  transferPrice: number;
+  size?: "sm" | "lg";
+}
+
+const { price, transferPrice, size = "sm" } = Astro.props;
+const big = size === "lg";
+---
+
+<div class="grid gap-1">
+  <p class:list={["font-extrabold text-acid", big ? "text-3xl" : "text-lg"]}>
+    <span class="sr-only">Precio transferencia o efectivo: </span>
+    {formatARS(transferPrice)}
+  </p>
+  <p class:list={["text-fog", big ? "text-sm" : "text-xs"]}>
+    <span class="uppercase tracking-[0.14em]">Transferencia / efectivo</span>
+  </p>
+  {
+    price !== transferPrice && (
+      <p class:list={["text-paper/55 line-through", big ? "text-base" : "text-xs"]}>
+        <span class="sr-only">Precio de lista: </span>
+        Lista {formatARS(price)}
+      </p>
+    )
+  }
+</div>

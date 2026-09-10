@@ -1,0 +1,25 @@
+{
+  "name": "sasu-store",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "catalog": "node scripts/build-catalog.mjs && node scripts/download-images.mjs",
+    "images": "node scripts/download-images.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.2",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.3.3"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

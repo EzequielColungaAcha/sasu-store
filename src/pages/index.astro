@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProductGrid from "../components/ProductGrid.astro";
+import catalog from "../data/products.json";
+import site from "../data/site.json";
+import { categoriesOf, hasStock, type Product } from "../lib/catalog";
+
+const products = catalog.products as Product[];
+const categories = categoriesOf(products);
+const inStockCount = products.filter(hasStock).length;
+---
+
+<Layout>
+  <section class="relative overflow-hidden border-b border-line">
+    <div
+      class="pointer-events-none absolute inset-0 opacity-70"
+      style="background:
+        radial-gradient(circle at 80% -10%, color-mix(in srgb, var(--color-acid) 22%, transparent), transparent 42%),
+        radial-gradient(circle at 10% 110%, color-mix(in srgb, var(--color-acid) 10%, transparent), transparent 36%);"
+    >
+    </div>
+    <div class="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.28em] text-acid">{site.tagline}</p>
+        <h1 class="mt-4 font-display text-6xl leading-[0.9] tracking-[0.12em] sm:text-8xl">
+          {site.name}
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-fog">
+          {site.description} Elegí el producto, mirá el detalle y consultá por WhatsApp.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="#catalogo"
+            class="rounded-full bg-acid px-5 py-3 text-sm font-extrabold uppercase tracking-[0.12em] text-ink hover:bg-paper"
+          >
+            Ver productos
+          </a>
+          <p class="self-center text-sm text-fog">
+            {inStockCount} con stock · {products.length} en catálogo
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="rounded-3xl border border-acid/40 bg-raised p-5">
+          <p class="text-xs uppercase tracking-[0.16em] text-acid">Envíos</p>
+          <p class="mt-2 font-display text-4xl tracking-wide">A toda la zona</p>
+        </div>
+        <div class="rounded-3xl border border-acid/40 bg-raised p-5">
+          <p class="text-xs uppercase tracking-[0.16em] text-acid">Productos Sin Stock</p>
+          <p class="mt-2 font-display text-4xl tracking-wide">Se puede realizar encargos de los productos sin stock</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <div class="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h2 class="font-display text-5xl tracking-[0.12em]">Productos</h2>
+        <p class="mt-2 text-fog">Filtrá por categoría o disponibilidad. El stock se muestra como con stock o sin stock.</p>
+      </div>
+    </div>
+    <ProductGrid products={products} categories={categories} />
+  </section>
+</Layout>

@@ -1,0 +1,18 @@
+---
+interface Props {
+  href: string;
+  label?: string;
+}
+
+const { href, label = "Consultar por WhatsApp" } = Astro.props;
+---
+
+<a
+  data-wa
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-acid px-5 py-3 text-center text-sm font-extrabold uppercase tracking-[0.12em] text-ink transition hover:bg-paper"
+>
+  {label}
+</a>

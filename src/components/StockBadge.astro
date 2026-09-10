@@ -1,0 +1,18 @@
+---
+interface Props {
+  inStock: boolean;
+  class?: string;
+}
+
+const { inStock, class: className = "" } = Astro.props;
+---
+
+<span
+  class:list={[
+    "inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.16em]",
+    inStock ? "bg-ok/15 text-ok" : "bg-warn/15 text-warn",
+    className,
+  ]}
+>
+  {inStock ? "Con stock" : "Sin stock"}
+</span>

@@ -1,0 +1,61 @@
+---
+import type { Product } from "../lib/catalog";
+import { featuredVariant, hasStock, imageSrc, srcSet, transitionName, visibleFlavors } from "../lib/catalog";
+import PriceBlock from "./PriceBlock.astro";
+import StockBadge from "./StockBadge.astro";
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const image = product.images[0] || "/placeholder.svg";
+const stock = hasStock(product);
+const deal = featuredVariant(product);
+const showDesde = product.variants.length > 1;
+const flavors = visibleFlavors(product);
+const flavorNote =
+  flavors.length > 1
+    ? `${flavors.length} sabores`
+    : flavors[0]?.name !== "Único"
+      ? flavors[0].name
+      : "";
+---
+
+<article
+  class="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-panel transition hover:border-acid/50 hover:shadow-[0_0_0_1px_rgba(214,255,60,0.25)]"
+  data-category={product.category}
+  data-stock={stock ? "si" : "no"}
+>
+  <a href={`/productos/${product.slug}`} class="flex flex-1 flex-col">
+    <div class="relative aspect-square overflow-hidden bg-raised">
+      <img
+        src={imageSrc(image, 640)}
+        srcset={product.images.length ? srcSet(image) : undefined}
+        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+        alt={product.name}
+        width="640"
+        height="640"
+        loading="lazy"
+        decoding="async"
+        transition:name={transitionName(product.id)}
+        class="h-full w-full object-contain p-4 transition duration-300 group-hover:scale-[1.04]"
+      />
+      <StockBadge inStock={stock} class="absolute left-3 top-3" />
+    </div>
+    <div class="flex flex-1 flex-col gap-3 p-4">
+      <p class="text-[11px] font-bold uppercase tracking-[0.18em] text-fog">
+        {product.category}
+        {product.brand ? ` · ${product.brand}` : ""}
+      </p>
+      <h2 class="text-lg font-bold leading-snug text-paper">{product.name}</h2>
+      {flavorNote && <p class="text-xs text-fog">{flavorNote}</p>}
+      <div class="mt-auto">
+        {showDesde && (
+          <p class="mb-1 text-[11px] uppercase tracking-[0.16em] text-fog">Desde</p>
+        )}
+        <PriceBlock price={deal.price} transferPrice={deal.transferPrice} />
+      </div>
+    </div>
+  </a>
+</article>

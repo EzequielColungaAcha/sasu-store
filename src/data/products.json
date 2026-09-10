@@ -1,0 +1,1399 @@
+{
+  "updatedAt": "2026-09-10",
+  "source": {
+    "sheet": "Data Septiembre"
+  },
+  "products": [
+    {
+      "id": "allinonemultivitamin",
+      "slug": "allinonemultivitamin",
+      "name": "All in One Multivitamin - 60 Cápsulas",
+      "category": "Vitamínicos",
+      "description": "💊 ALL IN ONE MULTIVITAMIN – 60 CÁPSULAS | STAR NUTRITION\n\nUna fórmula completa de vitaminas y minerales pensada para complementar tu alimentación y acompañar tu bienestar y rutina diaria.\n\n✨ Complejo de vitaminas y minerales\n🛡️ Contribuye al normal funcionamiento del sistema inmunitario\n⚡ Acompaña el metabolismo energético y ayuda a disminuir el cansancio y la fatiga\n🦴 Contribuye al mantenimiento de huesos y músculos normales\n🧠 Aporta nutrientes que acompañan el funcionamiento normal del sistema nervioso\n💊 60 cápsulas para una suplementación práctica y sencilla",
+      "images": [
+        "/images/products/allinonemultivitamin/01.webp",
+        "/images/products/allinonemultivitamin/02.webp",
+        "/images/products/allinonemultivitamin/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 21410,
+          "transferPrice": 20340,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "bcaa-2000-x-120-caps",
+      "slug": "bcaa-2000-x-120-caps",
+      "name": "BCAA 2000 - 120 Cápsulas",
+      "category": "Aminoácidos",
+      "description": "💪 BCAA 2000 – 120 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar aminoácidos de cadena ramificada (BCAA) a tu rutina, ideal para acompañar tus entrenamientos y objetivos deportivos.\n\n💪 Aporta BCAA: Leucina, Isoleucina y Valina\n🏋️ Ideal para complementar tu rutina de entrenamiento\n⚡ Acompaña el rendimiento y la recuperación muscular\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/bcaa-2000-x-120-caps/01.webp",
+        "/images/products/bcaa-2000-x-120-caps/02.webp",
+        "/images/products/bcaa-2000-x-120-caps/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 17870,
+          "transferPrice": 16980,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "beta-alanina-x-300grs",
+      "slug": "beta-alanina-x-300grs",
+      "name": "Beta Alanina X 300GRS",
+      "category": "Pre entrenos",
+      "description": "⚡ BETA ALANINA X 300 G – STAR NUTRITION\n\nLa Beta Alanina es un aminoácido ideal para acompañar entrenamientos de alta intensidad. Su consumo ayuda a mejorar la resistencia muscular y el rendimiento durante el ejercicio.\n\n💪 Favorece la resistencia muscular\n⚡ Acompaña el rendimiento en entrenamientos intensos\n🏋️ Contribuye a mejorar la fuerza y potencia\n🔬 Ayuda a amortiguar la acumulación de ácido láctico\n✨ Beta Alanina micronizada en polvo, grado farmacológico\n🌱 Apta para veganos",
+      "images": [
+        "/images/products/beta-alanina-x-300grs/01.webp",
+        "/images/products/beta-alanina-x-300grs/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 28020,
+          "transferPrice": 26620,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "caffeine-200-60-capsulas",
+      "slug": "caffeine-200-60-capsulas",
+      "name": "Caffeine 200 - 60 Cápsulas",
+      "category": "Pre entrenos",
+      "description": "⚡ CAFFEINE 200 – 60 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar cafeína a tu rutina diaria, ideal para acompañar tus entrenamientos y momentos de mayor exigencia.\n\n⚡ 200 mg de cafeína por cápsula\n🏋️ Ideal como complemento pre-entrenamiento\n🔥 Acompaña el rendimiento y la energía durante el ejercicio\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/caffeine-200-60-capsulas/01.webp",
+        "/images/products/caffeine-200-60-capsulas/02.webp",
+        "/images/products/caffeine-200-60-capsulas/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 10190,
+          "transferPrice": 9680,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "citrato-de-magnesio-60capsulas",
+      "slug": "citrato-de-magnesio-60capsulas",
+      "name": "Citrato de Magnesio - 60 Cápsulas",
+      "category": "Magnesios",
+      "description": "🧘 CITRATO DE MAGNESIO – 60 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar magnesio a tu rutina diaria, ideal para complementar la alimentación y acompañar el bienestar general.\n\n💪 Aporta magnesio en forma de citrato\n⚡ Contribuye al metabolismo energético normal\n🧠 Participa en el funcionamiento normal del sistema nervioso\n🏋️ Contribuye al funcionamiento normal de los músculos\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/citrato-de-magnesio-60capsulas/01.webp",
+        "/images/products/citrato-de-magnesio-60capsulas/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 15620,
+          "transferPrice": 14840,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "citrato-de-magnesio-polvo-sinsabor-210-gr",
+      "slug": "citrato-de-magnesio-polvo-sinsabor-210-gr",
+      "name": "Citrato de Magnesio - Polvo 210 Gr",
+      "category": "Magnesios",
+      "description": "💪 CITRATO DE MAGNESIO EN POLVO – STAR NUTRITION\n\nUna forma práctica de incorporar magnesio a tu rutina diaria. El Citrato de Magnesio contribuye a reducir el cansancio y la fatiga, favorece el funcionamiento normal de los músculos y ayuda a mantener una función psicológica normal.\n\n✨ Principales beneficios:\n\n•\n⚡ Contribuye a reducir la fatiga y el cansancio\n\n•\n💪 Contribuye al funcionamiento normal de los músculos\n\n•\n🧠 Contribuye al funcionamiento normal del sistema nervioso\n\n•\n🔄 Contribuye al metabolismo energético normal\n\n•\n🦴 Contribuye al mantenimiento de huesos normales\n\n•\n🌾 Libre de gluten | Sin TACC\n\n🍓 Disponible en 2 opciones:\nSIN SABOR y FRUTOS ROJOS",
+      "images": [
+        "/images/products/citrato-de-magnesio-polvo-sinsabor-210-gr/01.webp",
+        "/images/products/citrato-de-magnesio-polvo-sinsabor-210-gr/02.webp",
+        "/images/products/citrato-de-magnesio-polvo-sinsabor-210-gr/03.webp",
+        "/images/products/citrato-de-magnesio-polvo-sinsabor-210-gr/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "frutos-rojos",
+          "name": "Frutos Rojos",
+          "price": 14150,
+          "transferPrice": 13440,
+          "inStock": false
+        },
+        {
+          "id": "sin-sabor",
+          "name": "Sin sabor",
+          "price": 14150,
+          "transferPrice": 13440,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "citrato-de-magnesio-polvo-500-gr",
+      "slug": "citrato-de-magnesio-polvo-500-gr",
+      "name": "Citrato de Magnesio - Polvo 500 Gr",
+      "category": "Magnesios",
+      "description": "💪 CITRATO DE MAGNESIO EN POLVO – STAR NUTRITION\n\nUna forma práctica de incorporar magnesio a tu rutina diaria. El Citrato de Magnesio contribuye a reducir el cansancio y la fatiga, favorece el funcionamiento normal de los músculos y ayuda a mantener una función psicológica normal.\n\n✨ Principales beneficios:\n\n•\n⚡ Contribuye a reducir la fatiga y el cansancio\n\n•\n💪 Contribuye al funcionamiento normal de los músculos\n\n•\n🧠 Contribuye al funcionamiento normal del sistema nervioso\n\n•\n🔄 Contribuye al metabolismo energético normal\n\n•\n🦴 Contribuye al mantenimiento de huesos normales\n\n•\n🌾 Libre de gluten | Sin TACC\n\n🍓 Disponible en 2 opciones:\nSIN SABOR y FRUTOS ROJOS",
+      "images": [
+        "/images/products/citrato-de-magnesio-polvo-500-gr/01.webp",
+        "/images/products/citrato-de-magnesio-polvo-500-gr/02.webp",
+        "/images/products/citrato-de-magnesio-polvo-500-gr/03.webp",
+        "/images/products/citrato-de-magnesio-polvo-500-gr/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "frutos-rojos",
+          "name": "Frutos Rojos",
+          "price": 31440,
+          "transferPrice": 29870,
+          "inStock": false
+        },
+        {
+          "id": "sin-sabor",
+          "name": "Sin sabor",
+          "price": 31440,
+          "transferPrice": 29870,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "cla1000-x-90-caps",
+      "slug": "cla1000-x-90-caps",
+      "name": "CLA1000 - 90 Cápsulas",
+      "category": "Health",
+      "description": "🔥 CLA 1000 – 90 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar Ácido Linoleico Conjugado (CLA) a tu rutina diaria, ideal para complementar tu alimentación y acompañar tus objetivos deportivos.\n\n🔥 Aporta 1000 mg de CLA\n⚡ Acompaña el metabolismo de las grasas\n💪 Ideal para complementar objetivos de composición corporal\n🏋️ Perfecto para acompañar una rutina de entrenamiento\n🥗 Complementa una alimentación equilibrada\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/cla1000-x-90-caps/01.webp",
+        "/images/products/cla1000-x-90-caps/02.webp",
+        "/images/products/cla1000-x-90-caps/03.webp",
+        "/images/products/cla1000-x-90-caps/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 24340,
+          "transferPrice": 23120,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "collagen210gr",
+      "slug": "collagen210gr",
+      "name": "Collagen Hidrolizado 210GR",
+      "category": "Colágenos",
+      "description": "✨ COLLAGEN HIDROLIZADO 210 G | STAR NUTRITION\n\nUna fórmula completa para complementar tu rutina diaria, combinando colágeno hidrolizado, ácido hialurónico, vitamina C, resveratrol y Coenzima Q10.\n\n🦴 Colágeno hidrolizado\n✨ Ácido hialurónico\n🍊 Vitamina C, que contribuye a la formación normal de colágeno\n🛡️ Resveratrol\n⚡ Coenzima Q10\n🌾 Libre de gluten | Sin TACC\n🍋 Sabores: Limón y Frutos Rojos",
+      "images": [
+        "/images/products/collagen210gr/01.webp",
+        "/images/products/collagen210gr/02.webp",
+        "/images/products/collagen210gr/03.webp",
+        "/images/products/collagen210gr/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "frutos-rojos",
+          "name": "Frutos Rojos",
+          "price": 19160,
+          "transferPrice": 18200,
+          "inStock": false
+        },
+        {
+          "id": "limon",
+          "name": "Limón",
+          "price": 19160,
+          "transferPrice": 18200,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "collagen-plus-limon-360-gr-en-polvo",
+      "slug": "collagen-plus-limon-360-gr-en-polvo",
+      "name": "Collagen PLUS Limon 360 Gr en polvo",
+      "category": "Colágenos",
+      "description": "🦴 COLLAGEN PLUS – STAR NUTRITION\n\nUna fórmula completa que combina colágeno hidrolizado, calcio, vitamina C, magnesio y zinc, pensada para acompañar el cuidado de huesos, articulaciones y músculos.\n\n✨ Principales beneficios:\n\n•\n🦴 El colágeno hidrolizado contribuye al mantenimiento de la integridad de huesos y articulaciones.\n\n•\n🍊 La vitamina C es esencial para la síntesis normal de colágeno en el organismo.\n\n•\n💪 El magnesio contribuye al funcionamiento normal de los músculos y del sistema nervioso.\n\n•\n🛡️ El zinc contribuye al funcionamiento normal del sistema inmunitario y al metabolismo normal.\n\n• 👁️ El zinc también contribuye al mantenimiento de una visión normal.\n\n• ⚡ Fórmula pensada para acompañar el rendimiento y la recuperación diaria.\n\n•\n🌾 Libre de gluten y Sin TACC.",
+      "images": [
+        "/images/products/collagen-plus-limon-360-gr-en-polvo/01.webp",
+        "/images/products/collagen-plus-limon-360-gr-en-polvo/02.webp",
+        "/images/products/collagen-plus-limon-360-gr-en-polvo/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "limon",
+          "name": "Limón",
+          "price": 22790,
+          "transferPrice": 21650,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "collagen-sport-naranja-360-gr-en-polvo",
+      "slug": "collagen-sport-naranja-360-gr-en-polvo",
+      "name": "Collagen SPORT Naranja 360 Gr en polvo",
+      "category": "Colágenos",
+      "description": "🏃 COLLAGEN SPORT – STAR NUTRITION\n\nUna fórmula diseñada para acompañar tu rendimiento deportivo y el cuidado de tu cuerpo. Combina colágeno hidrolizado, vitamina C, magnesio y cafeína en una fórmula pensada especialmente para quienes realizan actividad física.\n\n💪 10 g de colágeno hidrolizado por porción\n🍊 1000 mg de vitamina C\n⚡ 200 mg de cafeína para acompañar el rendimiento y ayudar a retrasar la sensación de agotamiento\n🧘 80 mg de magnesio, mineral que contribuye al funcionamiento normal de los músculos y al metabolismo energético\n🦵 El colágeno y la vitamina C acompañan la formación normal de colágeno y el mantenimiento del tejido conectivo.",
+      "images": [
+        "/images/products/collagen-sport-naranja-360-gr-en-polvo/01.webp",
+        "/images/products/collagen-sport-naranja-360-gr-en-polvo/02.webp",
+        "/images/products/collagen-sport-naranja-360-gr-en-polvo/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "naranja",
+          "name": "Naranja",
+          "price": 22790,
+          "transferPrice": 21650,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "collagen-whey-protein",
+      "slug": "collagen-whey-protein",
+      "name": "Collagen Whey Protein - 2 Lb",
+      "category": "Colágenos",
+      "description": "💪 COLLAGEN WHEY PROTEIN – 2 LB | STAR NUTRITION\n\nLa combinación ideal de proteína de suero lácteo + colágeno hidrolizado en un solo producto. Una opción práctica para acompañar tu entrenamiento, favorecer el aporte diario de proteínas y complementar el cuidado de músculos, huesos y tejidos.\n\n✨ Proteína de suero lácteo\n🦴 Colágeno hidrolizado\n💪 Ideal para acompañar el desarrollo y mantenimiento muscular\n🔄 Aporta proteínas de alto valor biológico para complementar tu alimentación\n🌾 Libre de gluten\n🥤 Fácil de preparar y de incorporar a tu rutina\n\n🍫 Sabores: Chocolate y Vainilla",
+      "images": [
+        "/images/products/collagen-whey-protein/01.webp",
+        "/images/products/collagen-whey-protein/02.webp",
+        "/images/products/collagen-whey-protein/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 60260,
+          "transferPrice": 57250,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 60260,
+          "transferPrice": 57250,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatina-star-nutrition-150gs",
+      "slug": "creatina-star-nutrition-150gs",
+      "name": "Creatina Monohidrato 150Gs En Pote",
+      "category": "Creatinas",
+      "description": "⚡ CREATINA MONOHIDRATO 150 G – POTE SIN SABOR | STAR NUTRITION\n\nUna forma práctica de incorporar creatina monohidrato a tu rutina diaria, ideal para acompañar tus entrenamientos y objetivos de rendimiento deportivo.\n\n💪 Creatina monohidrato de alta pureza\n⚡ Contribuye al rendimiento físico en esfuerzos de alta intensidad\n🏋️ Acompaña la fuerza y potencia muscular\n🔄 Favorece la recuperación entre sesiones de entrenamiento\n📈 Ideal para acompañar objetivos de desarrollo y mantenimiento de masa muscular\n🥤 Sin sabor, ideal para combinar con agua o tu bebida favorita\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/creatina-star-nutrition-150gs/01.webp",
+        "/images/products/creatina-star-nutrition-150gs/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 16620,
+          "transferPrice": 15790,
+          "inStock": true
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatina-monohidrato-1kg",
+      "slug": "creatina-monohidrato-1kg",
+      "name": "Creatina Monohidrato 1Kg",
+      "category": "Creatinas",
+      "description": "⚡ CREATINA MONOHIDRATO 1 KG – SIN SABOR | STAR NUTRITION\n\nUna opción práctica para incorporar creatina monohidrato a tu rutina, ideal para acompañar tus entrenamientos y objetivos de rendimiento deportivo.\n\n💪 Creatina monohidrato de alta pureza\n🏋️ Contribuye al rendimiento físico durante esfuerzos de alta intensidad\n⚡ Acompaña la fuerza y potencia muscular\n🥤 Sin sabor, ideal para combinar con agua o tu bebida favorita\n🥄 Fácil de incorporar a tu rutina diaria\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/creatina-monohidrato-1kg/01.webp",
+        "/images/products/creatina-monohidrato-1kg/02.webp",
+        "/images/products/creatina-monohidrato-1kg/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 86470,
+          "transferPrice": 82150,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatina-monohidrato-300g-doypack-saborizada",
+      "slug": "creatina-monohidrato-300g-doypack-saborizada",
+      "name": "Creatina Monohidrato 300g Doypack - Sabores Nuevos",
+      "category": "Creatinas",
+      "description": "La creatina micronizada es una forma de creatina de alta pureza y excelente solubilidad, ideal para acompañar tu entrenamiento y potenciar tu rendimiento.\n\n• 100% creatina micronizada pura\n\n• Libre de gluten\n\n• Sin maltodextrina\n\n• Sin colorantes\n\n• Apto keto\n\n🍋🍇 ¡NUEVOS SABORES!\nAhora también podés disfrutarla en Limón y Uva, que se suman al clásico sabor Frutos Rojos.\n\nUna creatina pura, práctica y con deliciosos sabores para incorporar fácilmente a tu rutina diaria.",
+      "images": [
+        "/images/products/creatina-monohidrato-300g-doypack-saborizada/01.webp",
+        "/images/products/creatina-monohidrato-300g-doypack-saborizada/02.webp",
+        "/images/products/creatina-monohidrato-300g-doypack-saborizada/03.webp",
+        "/images/products/creatina-monohidrato-300g-doypack-saborizada/04.webp",
+        "/images/products/creatina-monohidrato-300g-doypack-saborizada/05.webp"
+      ],
+      "variants": [
+        {
+          "id": "frutos-rojos",
+          "name": "Frutos Rojos",
+          "price": 28570,
+          "transferPrice": 27140,
+          "inStock": true
+        },
+        {
+          "id": "grape",
+          "name": "Grape",
+          "price": 28570,
+          "transferPrice": 27140,
+          "inStock": false
+        },
+        {
+          "id": "limon",
+          "name": "Limón",
+          "price": 28570,
+          "transferPrice": 27140,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatina-monohidrato-300g-sinsabor-doypack",
+      "slug": "creatina-monohidrato-300g-sinsabor-doypack",
+      "name": "Creatina Monohidrato 300g Doypack Sin Sabor",
+      "category": "Creatinas",
+      "description": "💪 CREATINA MONOHIDRATO 300 G DOYPACK | STAR NUTRITION\n\nUna creatina de alta pureza, ideal para acompañar tus entrenamientos y potenciar tu rendimiento físico.\n\n⚡ 100% creatina monohidrato\n💪 Contribuye al aumento del rendimiento físico en series sucesivas de ejercicios breves y de alta intensidad\n🏋️ Ideal para acompañar el entrenamiento de fuerza y potencia\n🥤 Sin sabor, para combinar fácilmente con agua, jugos o tu bebida favorita\n🌾 Libre de gluten",
+      "images": [
+        "/images/products/creatina-monohidrato-300g-sinsabor-doypack/01.webp",
+        "/images/products/creatina-monohidrato-300g-sinsabor-doypack/02.webp",
+        "/images/products/creatina-monohidrato-300g-sinsabor-doypack/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 28570,
+          "transferPrice": 27140,
+          "inStock": true
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatina-monohidrato-eeuu-x-300-grs",
+      "slug": "creatina-monohidrato-eeuu-x-300-grs",
+      "name": "Creatina Monohidrato 300g en Pote",
+      "category": "Creatinas",
+      "description": "⚡ CREATINA MONOHIDRATO 300 G – POTE SIN SABOR | STAR NUTRITION\n\nUna forma práctica de incorporar creatina monohidrato a tu rutina diaria, ideal para acompañar tus entrenamientos y objetivos de rendimiento deportivo.\n\n💪 Creatina monohidrato de alta pureza\n⚡ Contribuye al rendimiento físico en esfuerzos de alta intensidad\n🏋️ Acompaña la fuerza y potencia muscular\n🔄 Favorece la recuperación entre sesiones de entrenamiento\n📈 Ideal para acompañar objetivos de desarrollo y mantenimiento de masa muscular\n🥤 Sin sabor, ideal para combinar con agua o tu bebida favorita\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/creatina-monohidrato-eeuu-x-300-grs/01.webp",
+        "/images/products/creatina-monohidrato-eeuu-x-300-grs/02.webp",
+        "/images/products/creatina-monohidrato-eeuu-x-300-grs/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 31640,
+          "transferPrice": 30060,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatina-monohidrato-500gs-en-pote",
+      "slug": "creatina-monohidrato-500gs-en-pote",
+      "name": "Creatina Monohidrato 500Gs En Pote",
+      "category": "Creatinas",
+      "description": "💪 CREATINA MONOHIDRATO 500 G – STAR NUTRITION\n\nUna creatina de máxima pureza, ideal para acompañar tus entrenamientos y potenciar tu rendimiento.\n\n✨ 100% creatina monohidrato micronizada\n💪 Contribuye a mejorar la fuerza y el rendimiento físico\n⚡ Ideal para acompañar el desarrollo de potencia y resistencia\n🔄 Acompaña la recuperación después del entrenamiento\n🌾 Libre de gluten\n🥤 Sin sabor, para combinar fácilmente con agua, jugos o tu bebida favorita",
+      "images": [
+        "/images/products/creatina-monohidrato-500gs-en-pote/01.webp",
+        "/images/products/creatina-monohidrato-500gs-en-pote/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 47710,
+          "transferPrice": 45320,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "creatine-wheyprotein910",
+      "slug": "creatine-wheyprotein910",
+      "name": "Creatine & Whey Protein - Creatina con Proteína 910 Gramos",
+      "category": "Proteínas",
+      "description": "La combinación perfecta de proteína y creatina en un solo producto.\n\nCreatine & Whey Protein es una fórmula pensada para quienes buscan complementar su alimentación y acompañar sus objetivos deportivos de una manera práctica y simple. Combina Whey Protein con Creatina Monohidratada, dos de los suplementos más utilizados para acompañar el desarrollo y mantenimiento de la masa muscular y el rendimiento físico.\n\nCada porción de 35 gramos aporta:\n\n• 25 g de proteína Whey Protein\n\n• 5 g de Creatina Monohidratada\n\nEl producto contiene 26 porciones, para que puedas incorporar proteína y creatina en una única preparación y de manera cómoda todos los días.",
+      "images": [
+        "/images/products/creatine-wheyprotein910/01.webp",
+        "/images/products/creatine-wheyprotein910/02.webp",
+        "/images/products/creatine-wheyprotein910/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 69710,
+          "transferPrice": 66220,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 69710,
+          "transferPrice": 66220,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "essential-amino-limon-360",
+      "slug": "essential-amino-limon-360",
+      "name": "EAA´s Essential Aminos - 360 Gr",
+      "category": "Aminoácidos",
+      "description": "💪 EAA'S ESSENTIAL AMINOS – 360 G | STAR NUTRITION\n\nUna fórmula con aminoácidos esenciales (EAA's), ideal para complementar tu alimentación y acompañar tus entrenamientos y objetivos deportivos.\n\n💪 Aporta aminoácidos esenciales\n🧬 Contiene aminoácidos que el organismo no puede producir por sí mismo\n🏋️ Contribuye al mantenimiento y desarrollo de la masa muscular\n🔄 Acompaña la recuperación muscular después del ejercicio\n⚡ Ideal para complementar entrenamientos de alta intensidad\n🥤 Fácil de preparar y consumir antes, durante o después del entrenamiento\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/essential-amino-limon-360/01.webp",
+        "/images/products/essential-amino-limon-360/02.webp",
+        "/images/products/essential-amino-limon-360/03.webp",
+        "/images/products/essential-amino-limon-360/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "limon",
+          "name": "Limón",
+          "price": 37830,
+          "transferPrice": 35940,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "hmb-x-180-caps",
+      "slug": "hmb-x-180-caps",
+      "name": "HMB - 180 Cápsulas",
+      "category": "Recuperadores musculares",
+      "description": "💪 HMB – 180 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar HMB a tu rutina diaria, ideal para acompañar tus entrenamientos y objetivos de desarrollo y mantenimiento muscular.\n\n💪 Aporta HMB (β-Hidroxi-β-Metilbutirato)\n🏋️ Contribuye al mantenimiento de la masa muscular\n🔄 Acompaña la recuperación muscular después del ejercicio\n⚡ Ideal para complementar períodos de entrenamiento intenso\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/hmb-x-180-caps/01.webp",
+        "/images/products/hmb-x-180-caps/02.webp",
+        "/images/products/hmb-x-180-caps/03.webp",
+        "/images/products/hmb-x-180-caps/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 28230,
+          "transferPrice": 26820,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "hydroplus-sport-drink-x-700-grs-lima-limon-endurance",
+      "slug": "hydroplus-sport-drink-x-700-grs-lima-limon-endurance",
+      "name": "Hydroplus Endurance - 700 Gr",
+      "category": "Bebidas isotónicas",
+      "description": "💧 HYDROPLUS ENDURANCE – 700 G | STAR NUTRITION\n\nUna fórmula pensada para acompañar la hidratación y el rendimiento durante actividades físicas prolongadas y entrenamientos de alta exigencia.\n\n💧 Ayuda a mantener una hidratación adecuada\n⚡ Aporta carbohidratos y electrolitos\n🏃 Ideal para entrenamientos y actividades de resistencia\n💪 Acompaña el rendimiento durante el ejercicio\n🥤 Fácil de preparar y consumir durante la actividad",
+      "images": [
+        "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/01.webp",
+        "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/02.webp",
+        "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/03.webp",
+        "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/04.webp",
+        "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/05.webp"
+      ],
+      "variants": [
+        {
+          "id": "blue-raz",
+          "name": "Blue Raz",
+          "price": 18360,
+          "transferPrice": 17440,
+          "inStock": false
+        },
+        {
+          "id": "lima-limon",
+          "name": "Lima Limón",
+          "price": 18360,
+          "transferPrice": 17440,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "iron-pack-multivitamin-powder-383-gr",
+      "slug": "iron-pack-multivitamin-powder-383-gr",
+      "name": "Iron Pack Multivitamin Powder 383 Gr",
+      "category": "Vitamínicos",
+      "description": "💪 IRON PACK MULTIVITAMIN POWDER – 383 G | STAR NUTRITION\n\nMás que un multivitamínico: una fórmula integral pensada para acompañar las necesidades nutricionales diarias de personas activas y deportistas.\n\n✨ Vitaminas y minerales esenciales\n🛡️ Apoyo nutricional e inmunológico diario\n⚡ Con vitaminas C, B y D\n🧬 Con zinc\n💪 Aporta EAA y BCAA\n🏋️ Ideal para acompañar una rutina de entrenamiento intensa\n🥤 Formato en polvo, práctico para incorporar a tu día",
+      "images": [
+        "/images/products/iron-pack-multivitamin-powder-383-gr/01.webp",
+        "/images/products/iron-pack-multivitamin-powder-383-gr/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 106070,
+          "transferPrice": 100770,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "just-carbs-x-1kg",
+      "slug": "just-carbs-x-1kg",
+      "name": "Just Carbs - 1 Kg",
+      "category": "Recuperadores musculares",
+      "description": "⚡ JUST CARBS – 1 KG SIN SABOR | STAR NUTRITION\n\nUna fuente práctica de carbohidratos, ideal para complementar tu alimentación y aportar energía durante tus entrenamientos y actividades físicas.\n\n⚡ Aporta carbohidratos como fuente de energía\n🏋️ Ideal para acompañar entrenamientos y actividades de alta intensidad\n🔋 Ayuda a complementar el aporte energético diario\n💪 Ideal para acompañar rutinas de fuerza, resistencia y rendimiento\n🥤 Sin sabor, fácil de combinar con agua, licuados o distintas preparaciones\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/just-carbs-x-1kg/01.webp",
+        "/images/products/just-carbs-x-1kg/02.webp",
+        "/images/products/just-carbs-x-1kg/03.webp",
+        "/images/products/just-carbs-x-1kg/04.webp",
+        "/images/products/just-carbs-x-1kg/05.webp",
+        "/images/products/just-carbs-x-1kg/06.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 17840,
+          "transferPrice": 16950,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "just-plant-x-2lb",
+      "slug": "just-plant-x-2lb",
+      "name": "Just Plant 2 Lb",
+      "category": "Proteínas",
+      "description": "🌱 JUST PLANT SIN SABOR – 2 LB | STAR NUTRITION\n\nUna proteína 100% vegetal y sin sabor, ideal para complementar tu alimentación y acompañar tus objetivos de desarrollo y mantenimiento de masa muscular.\n\n🌱 Aporta proteína de origen vegetal\n💪 Contribuye al mantenimiento y desarrollo de la masa muscular\n🧬 Aporta aminoácidos esenciales para complementar tu alimentación\n🔄 Ideal para acompañar la recuperación muscular después del entrenamiento\n🥤 Sin sabor, ideal para combinar con licuados, bebidas o distintas preparaciones\n🌱 100% de origen vegetal\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/just-plant-x-2lb/01.webp",
+        "/images/products/just-plant-x-2lb/02.webp",
+        "/images/products/just-plant-x-2lb/03.webp",
+        "/images/products/just-plant-x-2lb/04.webp",
+        "/images/products/just-plant-x-2lb/05.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 43510,
+          "transferPrice": 41330,
+          "inStock": true
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "just-whey-2lb",
+      "slug": "just-whey-2lb",
+      "name": "Just Whey Sin Sabor - 2 Lb",
+      "category": "Proteínas",
+      "description": "🥛 JUST WHEY SIN SABOR – 2 LB DOYPACK | STAR NUTRITION\n\nUna proteína de suero de leche (Whey Protein) sin sabor, ideal para complementar tu alimentación y acompañar tus objetivos deportivos.\n\n💪 Aporta proteínas de alto valor biológico\n🏋️ Contribuye al mantenimiento y desarrollo de la masa muscular\n🔄 Acompaña la recuperación muscular después del entrenamiento\n🧬 Aporta aminoácidos esenciales para complementar tu alimentación\n🥤 Sin sabor, ideal para combinar con agua, leche, licuados o distintas preparaciones\n🎒 Práctico formato Doypack\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/just-whey-2lb/01.webp",
+        "/images/products/just-whey-2lb/02.webp",
+        "/images/products/just-whey-2lb/03.webp",
+        "/images/products/just-whey-2lb/04.webp",
+        "/images/products/just-whey-2lb/05.webp",
+        "/images/products/just-whey-2lb/06.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 85150,
+          "transferPrice": 80890,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "l-arginina-gh-x-150-grs",
+      "slug": "l-arginina-gh-x-150-grs",
+      "name": "L-Arginina GH - 150 Gr",
+      "category": "Aminoácidos",
+      "description": "💪 L-ARGININA GH – 150 G | STAR NUTRITION\n\nUna forma práctica de incorporar L-Arginina a tu rutina, ideal para acompañar tus entrenamientos y objetivos deportivos.\n\n💪 Aporta L-Arginina\n🏋️ Ideal para complementar tu rutina de entrenamiento\n⚡ Contribuye al rendimiento físico durante el ejercicio\n🩸 Participa en la producción de óxido nítrico, favoreciendo la circulación sanguínea\n🔥 Ideal para acompañar entrenamientos de alta intensidad\n🥤 Fácil de preparar y combinar con agua o tu bebida favorita\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/l-arginina-gh-x-150-grs/01.webp",
+        "/images/products/l-arginina-gh-x-150-grs/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 17500,
+          "transferPrice": 16630,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "carnitine-x-60-caps",
+      "slug": "carnitine-x-60-caps",
+      "name": "L-Carnitine 1000 - 60 Cápsulas",
+      "category": "Quemadores",
+      "description": "🔥 L-CARNITINE 1000 – 60 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar L-Carnitina a tu rutina diaria, ideal para acompañar tus entrenamientos y objetivos deportivos.\n\n🔥 1000 mg de L-Carnitina\n🏋️ Ideal para complementar tu rutina de entrenamiento\n⚡ Acompaña el rendimiento y la energía durante el ejercicio\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/carnitine-x-60-caps/01.webp",
+        "/images/products/carnitine-x-60-caps/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 13910,
+          "transferPrice": 13210,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "l-carnitine-liquida-500",
+      "slug": "l-carnitine-liquida-500",
+      "name": "L-Carnitine Liquida",
+      "category": "Quemadores",
+      "description": "🔥 L-CARNITINE LÍQUIDA | STAR NUTRITION\n\nUna forma práctica de incorporar L-Carnitina a tu rutina, ideal para acompañar tus entrenamientos y objetivos deportivos.\n\n🔥 Aporta L-Carnitina\n⚡ Participa en el transporte de ácidos grasos para su utilización como fuente de energía\n🏋️ Ideal para complementar tu rutina de entrenamiento\n💪 Acompaña tus objetivos de composición corporal\n⚡ Contribuye al metabolismo energético normal\n🥤 Formato líquido, fácil de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/l-carnitine-liquida-500/01.webp",
+        "/images/products/l-carnitine-liquida-500/02.webp",
+        "/images/products/l-carnitine-liquida-500/03.webp",
+        "/images/products/l-carnitine-liquida-500/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "naranja",
+          "name": "Naranja",
+          "price": 14600,
+          "transferPrice": 13870,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "l-citrulline-x-300grs",
+      "slug": "l-citrulline-x-300grs",
+      "name": "L-Citrulline Malate - 300 Gr",
+      "category": "Pre entrenos",
+      "description": "💪 L-CITRULLINE MALATE – 300 G | STAR NUTRITION\n\nUna fórmula que combina L-Citrulina y ácido málico, ideal para acompañar tus entrenamientos y objetivos de rendimiento deportivo.\n\n⚡ Acompaña el rendimiento físico durante el ejercicio\n🏋️ Ideal para entrenamientos de alta intensidad\n🩸 Favorece la producción de óxido nítrico y el flujo sanguíneo\n💪 Acompaña la resistencia y el rendimiento muscular\n🔄 Ideal para complementar la recuperación después del entrenamiento\n🥤 Fácil de preparar y consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/l-citrulline-x-300grs/01.webp",
+        "/images/products/l-citrulline-x-300grs/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 59530,
+          "transferPrice": 56550,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "l-glutamine-150-gr",
+      "slug": "l-glutamine-150-gr",
+      "name": "L-Glutamine - 150 Gr",
+      "category": "Aminoácidos",
+      "description": "💪 L-GLUTAMINE 150 G – STAR NUTRITION\n\nLa L-Glutamina es un aminoácido presente en numerosos tejidos del organismo y participa en procesos relacionados con la formación y recuperación de tejidos. Es una opción ideal para complementar la alimentación, especialmente en períodos de entrenamiento intenso.\n\n✨ 5 g de L-Glutamina por porción\n💪 Acompaña la recuperación muscular\n🔄 Contribuye a la recuperación de tejidos\n🥄 L-Glutamina micronizada de máxima pureza",
+      "images": [
+        "/images/products/l-glutamine-150-gr/01.webp",
+        "/images/products/l-glutamine-150-gr/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 19240,
+          "transferPrice": 18280,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "l-glutamine-x-300-grs",
+      "slug": "l-glutamine-x-300-grs",
+      "name": "L-Glutamine - 300 Gr",
+      "category": "Aminoácidos",
+      "description": "💪 L-GLUTAMINE – 300 G | STAR NUTRITION\n\nUna forma práctica de incorporar L-Glutamina a tu rutina diaria, ideal para acompañar tus entrenamientos y objetivos deportivos.\n\n💪 Aporta L-Glutamina\n🏋️ Ideal para complementar tu rutina de entrenamiento\n⚡ Acompaña la recuperación muscular después del ejercicio\n🥤 Fácil de preparar y combinar con agua o tu bebida favorita\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/l-glutamine-x-300-grs/01.webp",
+        "/images/products/l-glutamine-x-300-grs/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 32060,
+          "transferPrice": 30460,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "mtor-bcaa-270g",
+      "slug": "mtor-bcaa-270g",
+      "name": "Mtor BCAA 270 Gr",
+      "category": "Aminoácidos",
+      "description": "💪 MTOR BCAA – 270 G | STAR NUTRITION\n\nUna fórmula con aminoácidos de cadena ramificada (BCAA), pensada para acompañar tus entrenamientos y objetivos de desarrollo muscular.\n\n💪 Aporta BCAA: Leucina, Isoleucina y Valina\n🧬 La Leucina participa en la síntesis de proteínas musculares\n🏋️ Ideal para acompañar el desarrollo y mantenimiento de masa muscular\n🔄 Acompaña la recuperación muscular después del ejercicio\n⚡ Ideal para complementar entrenamientos de alta intensidad\n🥤 Fácil de preparar y consumir antes, durante o después del entrenamiento\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/mtor-bcaa-270g/01.webp",
+        "/images/products/mtor-bcaa-270g/02.webp",
+        "/images/products/mtor-bcaa-270g/03.webp",
+        "/images/products/mtor-bcaa-270g/04.webp",
+        "/images/products/mtor-bcaa-270g/05.webp",
+        "/images/products/mtor-bcaa-270g/06.webp",
+        "/images/products/mtor-bcaa-270g/07.webp",
+        "/images/products/mtor-bcaa-270g/08.webp"
+      ],
+      "variants": [
+        {
+          "id": "fruit-punch",
+          "name": "Fruit Punch",
+          "price": 30950,
+          "transferPrice": 29400,
+          "inStock": false
+        },
+        {
+          "id": "green-lemonade",
+          "name": "Green Lemonade",
+          "price": 30950,
+          "transferPrice": 29400,
+          "inStock": false
+        },
+        {
+          "id": "strawberry-lime",
+          "name": "Strawberry-Lime",
+          "price": 30950,
+          "transferPrice": 29400,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "mutant-mass-1-5kg",
+      "slug": "mutant-mass-1-5kg",
+      "name": "Mutant Mass 1,5kg",
+      "category": "Aumentadores de masa",
+      "description": "🥤 MUTANT MASS 1,5 KG | STAR NUTRITION\n\nUn ganador de peso pensado para quienes buscan aumentar el aporte de calorías, proteínas y carbohidratos, ideal para acompañar objetivos de volumen y desarrollo muscular.\n\n🔥 Aporta calorías, proteínas y carbohidratos\n💪 Ideal para acompañar objetivos de ganancia de masa muscular\n🏋️ Perfecto para complementar tu alimentación y entrenamiento\n🥤 Fácil de preparar y disfrutar\n🍪 Sabores disponibles: Cookies & Cream | Chocolate | Frutilla | Vainilla",
+      "images": [
+        "/images/products/mutant-mass-1-5kg/01.webp",
+        "/images/products/mutant-mass-1-5kg/02.webp",
+        "/images/products/mutant-mass-1-5kg/03.webp",
+        "/images/products/mutant-mass-1-5kg/04.webp",
+        "/images/products/mutant-mass-1-5kg/05.webp"
+      ],
+      "variants": [
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 53580,
+          "transferPrice": 50900,
+          "inStock": false
+        },
+        {
+          "id": "cookies-cream",
+          "name": "Cookies & Cream",
+          "price": 53580,
+          "transferPrice": 50900,
+          "inStock": false
+        },
+        {
+          "id": "frutilla",
+          "name": "Frutilla",
+          "price": 53580,
+          "transferPrice": 50900,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 53580,
+          "transferPrice": 50900,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "mutant-mass-5kg",
+      "slug": "mutant-mass-5kg",
+      "name": "Mutant Mass 5kg",
+      "category": "Aumentadores de masa",
+      "description": "🥤 MUTANT MASS 5 KG | STAR NUTRITION\n\nUn ganador de peso pensado para quienes buscan aumentar el aporte de calorías, proteínas y carbohidratos, ideal para acompañar objetivos de volumen y desarrollo muscular.\n\n🔥 Aporta calorías, proteínas y carbohidratos\n💪 Ideal para acompañar objetivos de ganancia de masa muscular\n🏋️ Perfecto para complementar tu alimentación y entrenamiento\n🥤 Fácil de preparar y disfrutar\n🍪 Sabores disponibles: Cookies & Cream | Chocolate | Frutilla | Vainilla",
+      "images": [
+        "/images/products/mutant-mass-5kg/01.webp",
+        "/images/products/mutant-mass-5kg/02.webp",
+        "/images/products/mutant-mass-5kg/03.webp",
+        "/images/products/mutant-mass-5kg/04.webp",
+        "/images/products/mutant-mass-5kg/05.webp",
+        "/images/products/mutant-mass-5kg/06.webp"
+      ],
+      "variants": [
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 145910,
+          "transferPrice": 138610,
+          "inStock": false
+        },
+        {
+          "id": "cookies-cream",
+          "name": "Cookies & Cream",
+          "price": 145910,
+          "transferPrice": 138610,
+          "inStock": false
+        },
+        {
+          "id": "frutilla",
+          "name": "Frutilla",
+          "price": 145910,
+          "transferPrice": 138610,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 145910,
+          "transferPrice": 138610,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "nitro-whey-chocolate-x-2-lb",
+      "slug": "nitro-whey-chocolate-x-2-lb",
+      "name": "Nitro Whey - 2 Lb",
+      "category": "Proteínas",
+      "description": "💪 NITRO WHEY – 2 LB | STAR NUTRITION\n\nUna fórmula todo en uno que combina proteína de suero de leche, dos tipos de creatina, BCAA y enzimas digestivas, ideal para acompañar tus entrenamientos y objetivos de desarrollo muscular.\n\n💪 25 g de proteína por servicio\n⚡ Contiene Creatina Monohidrato + Creatina Nitrato\n🏋️ Acompaña el desarrollo y mantenimiento de la masa muscular\n🔥 Ideal para complementar el rendimiento físico\n🧬 Aporta aminoácidos de cadena ramificada (BCAA)\n🔄 Acompaña la recuperación muscular\n🧪 Contiene enzimas digestivas\n🥤 Fácil de preparar y consumir",
+      "images": [
+        "/images/products/nitro-whey-chocolate-x-2-lb/01.webp",
+        "/images/products/nitro-whey-chocolate-x-2-lb/02.webp",
+        "/images/products/nitro-whey-chocolate-x-2-lb/03.webp",
+        "/images/products/nitro-whey-chocolate-x-2-lb/04.webp"
+      ],
+      "variants": [
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 86960,
+          "transferPrice": 82610,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "omega3-fish-oil-x-60-caps",
+      "slug": "omega3-fish-oil-x-60-caps",
+      "name": "Omega 3 Fish Oil - 60 Cápsulas",
+      "category": "Health",
+      "description": "🐟 OMEGA 3 FISH OIL – 60 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar Omega 3 a tu rutina diaria, ideal para complementar tu alimentación y acompañar el bienestar general.\n\n🐟 Aporta Omega 3 proveniente de aceite de pescado\n❤️ Contribuye al funcionamiento normal del corazón\n🧠 Acompaña el funcionamiento normal del cerebro\n👁️ Contribuye al mantenimiento de la visión normal\n💪 Ideal para complementar una alimentación equilibrada\n💊 Fácil y práctico de consumir",
+      "images": [
+        "/images/products/omega3-fish-oil-x-60-caps/01.webp",
+        "/images/products/omega3-fish-oil-x-60-caps/02.webp",
+        "/images/products/omega3-fish-oil-x-60-caps/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 34360,
+          "transferPrice": 32640,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "premium-whey-isolate-chocolate-x-2-lbs",
+      "slug": "premium-whey-isolate-chocolate-x-2-lbs",
+      "name": "Platinum Whey Isolate 2 Lb",
+      "category": "Proteínas",
+      "description": "🥛 PLATINUM WHEY ISOLATE – 2 LB | STAR NUTRITION\n\nUna proteína Whey Isolate de alta calidad, ideal para quienes buscan incorporar proteínas de manera práctica y acompañar sus objetivos de desarrollo y mantenimiento muscular.\n\n💪 Aporta proteína de suero de leche aislada\n🏋️ Contribuye al mantenimiento y desarrollo de la masa muscular\n🧬 Aporta aminoácidos esenciales para complementar tu alimentación\n🔄 Ideal para acompañar la recuperación muscular después del entrenamiento\n⚡ Alto aporte de proteínas por porción\n🥛 Sin lactosa\n🥤 Fácil de preparar y consumir\n🌾 Libre de gluten | Sin TACC\n\n🍫 Sabores disponibles: Chocolate | Vainilla",
+      "images": [
+        "/images/products/premium-whey-isolate-chocolate-x-2-lbs/01.webp",
+        "/images/products/premium-whey-isolate-chocolate-x-2-lbs/02.webp",
+        "/images/products/premium-whey-isolate-chocolate-x-2-lbs/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 123120,
+          "transferPrice": 116960,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 123120,
+          "transferPrice": 116960,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "platinum-whey-protein-chocolate-x-2-lbs",
+      "slug": "platinum-whey-protein-chocolate-x-2-lbs",
+      "name": "Platinum Whey Protein 2 Lb",
+      "category": "Proteínas",
+      "description": "🥛 PLATINUM WHEY PROTEIN – 2 LB | STAR NUTRITION\n\nUna proteína de suero de leche (Whey Protein) pensada para acompañar tus entrenamientos y objetivos de desarrollo y mantenimiento de masa muscular.\n\n💪 Aporta proteínas de alto valor biológico\n🏋️ Contribuye al mantenimiento y desarrollo de la masa muscular\n🔄 Ideal para acompañar la recuperación muscular después del entrenamiento\n⚡ Aporta proteínas para complementar tu alimentación diaria\n🧬 Contribuye al aporte de aminoácidos esenciales necesarios para la síntesis de proteínas\n🥤 Fácil de preparar y combinar con agua o leche\n🍫 Sabores disponibles: Chocolate | Vainilla | Frutilla | Banana | Cookies & Cream",
+      "images": [
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/01.webp",
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/02.webp",
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/03.webp",
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/04.webp",
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/05.webp",
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/06.webp",
+        "/images/products/platinum-whey-protein-chocolate-x-2-lbs/07.webp"
+      ],
+      "variants": [
+        {
+          "id": "banana",
+          "name": "Banana",
+          "price": 84700,
+          "transferPrice": 80470,
+          "inStock": false
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 84700,
+          "transferPrice": 80470,
+          "inStock": false
+        },
+        {
+          "id": "cookies-cream",
+          "name": "Cookies & Cream",
+          "price": 84700,
+          "transferPrice": 80470,
+          "inStock": true
+        },
+        {
+          "id": "frutilla",
+          "name": "Frutilla",
+          "price": 84700,
+          "transferPrice": 80470,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 84700,
+          "transferPrice": 80470,
+          "inStock": true
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "premium-whey-protein-vainilla-x-3-kilos-zipper-pack",
+      "slug": "premium-whey-protein-vainilla-x-3-kilos-zipper-pack",
+      "name": "Platinum Whey Protein 3Kg",
+      "category": "Proteínas",
+      "description": "🥛 PLATINUM WHEY PROTEIN – 3 KG | STAR NUTRITION\n\nUna proteína de suero de leche (Whey Protein) pensada para acompañar tus entrenamientos y objetivos de desarrollo y mantenimiento de masa muscular.\n\n💪 Aporta proteínas de alto valor biológico\n🏋️ Contribuye al mantenimiento y desarrollo de la masa muscular\n🔄 Ideal para acompañar la recuperación muscular después del entrenamiento\n⚡ Aporta proteínas para complementar tu alimentación diaria\n🧬 Contribuye al aporte de aminoácidos esenciales necesarios para la síntesis de proteínas\n🥤 Fácil de preparar y combinar con agua o leche\n🍫 Sabores disponibles: Chocolate | Vainilla | Frutilla | Banana | Cookies & Cream",
+      "images": [
+        "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/01.webp",
+        "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/02.webp",
+        "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/03.webp",
+        "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/04.webp",
+        "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/05.webp",
+        "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/06.webp"
+      ],
+      "variants": [
+        {
+          "id": "banana",
+          "name": "Banana",
+          "price": 248720,
+          "transferPrice": 236280,
+          "inStock": false
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 248720,
+          "transferPrice": 236280,
+          "inStock": false
+        },
+        {
+          "id": "cookies-cream",
+          "name": "Cookies & Cream",
+          "price": 248720,
+          "transferPrice": 236280,
+          "inStock": false
+        },
+        {
+          "id": "frutilla",
+          "name": "Frutilla",
+          "price": 248720,
+          "transferPrice": 236280,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 248720,
+          "transferPrice": 236280,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "pump-3d-ripped-315-gr",
+      "slug": "pump-3d-ripped-315-gr",
+      "name": "PUMP 3D Ripped - 315 Gr",
+      "category": "Pre entrenos",
+      "description": "⚡ PUMP 3D RIPPED – 315 G | STAR NUTRITION\n\nUna fórmula completa para acompañar tus entrenamientos, combinando cafeína, vitaminas y extractos naturales de café verde, té verde, guaraná, cacao, cayena y naranja amarga.\n\n🔥 Energía para acompañar tus entrenamientos\n⚡ Contiene cafeína\n🍃 Con extracto de té verde, café verde y guaraná\n🌶️ Con extracto de cayena y naranja amarga\n🍊 Aporta vitamina C\n💊 Con vitaminas B6, B12 y D\n🥤 Fácil de preparar y consumir",
+      "images": [
+        "/images/products/pump-3d-ripped-315-gr/01.webp",
+        "/images/products/pump-3d-ripped-315-gr/02.webp",
+        "/images/products/pump-3d-ripped-315-gr/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "lemonade",
+          "name": "Lemonade",
+          "price": 40060,
+          "transferPrice": 38060,
+          "inStock": false
+        },
+        {
+          "id": "strawberry-lime",
+          "name": "Strawberry-Lime",
+          "price": 40060,
+          "transferPrice": 38060,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "pump-v8-285-gr",
+      "slug": "pump-v8-285-gr",
+      "name": "PUMP V8 - 285 Gr",
+      "category": "Pre entrenos",
+      "description": "⚡ PUMP V8 – 285 G | STAR NUTRITION\n\nUn pre-entreno Next Gen diseñado para acompañar tus entrenamientos de alta intensidad. Combina beta alanina, L-citrulina malato, arginina, betaína, taurina, cafeína y extractos vegetales, junto con vitaminas C, B6 y B12.\n\n🔥 Energía y enfoque para tus entrenamientos\n💪 Aminoácidos para acompañar el rendimiento deportivo\n⚡ Cafeína + guaraná + cacao\n🏋️ Beta alanina, L-citrulina y arginina\n💥 Con betaína y taurina\n🧠 Con L-tirosina y colina\n🍊 Vitaminas C, B6 y B12",
+      "images": [
+        "/images/products/pump-v8-285-gr/01.webp",
+        "/images/products/pump-v8-285-gr/02.webp",
+        "/images/products/pump-v8-285-gr/03.webp",
+        "/images/products/pump-v8-285-gr/04.webp",
+        "/images/products/pump-v8-285-gr/05.webp"
+      ],
+      "variants": [
+        {
+          "id": "acai-power",
+          "name": "Acaí Power",
+          "price": 33590,
+          "transferPrice": 31910,
+          "inStock": false
+        },
+        {
+          "id": "grape-attack",
+          "name": "Grape Attack",
+          "price": 33590,
+          "transferPrice": 31910,
+          "inStock": false
+        },
+        {
+          "id": "lima-limon",
+          "name": "Lima Limón",
+          "price": 33590,
+          "transferPrice": 31910,
+          "inStock": false
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon",
+          "price": 33590,
+          "transferPrice": 31910,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "resveratrol-500-x-60-caps",
+      "slug": "resveratrol-500-x-60-caps",
+      "name": "Resveratrol 500 - 60 Cápsulas",
+      "category": "Health",
+      "description": "🍇 RESVERATROL 500 – 60 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar resveratrol a tu rutina diaria, ideal para complementar tu alimentación y acompañar el bienestar general.\n\n🍇 500 mg de Resveratrol\n🛡️ Aporta acción antioxidante para ayudar a proteger las células frente al estrés oxidativo\n❤️ Contribuye al bienestar cardiovascular\n⚡ Acompaña el metabolismo energético y el bienestar general\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/resveratrol-500-x-60-caps/01.webp",
+        "/images/products/resveratrol-500-x-60-caps/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 21630,
+          "transferPrice": 20550,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "rippedv8-quemador-60-capsulas",
+      "slug": "rippedv8-quemador-60-capsulas",
+      "name": "Ripped V8 Quemador - 60 Cápsulas",
+      "category": "Quemadores",
+      "description": "Ripped V8 es el nuevo quemador con una fórmula 100% renovada. Contiene los ingredientes activos que se necesitan para entrenar intensamente, por más tiempo, con mayor volumen de sangre en los músculos y súper motivado. Además, no aporta calorías, grasas saturadas ni ingredientes de relleno.",
+      "images": [
+        "/images/products/rippedv8-quemador-60-capsulas/01.webp",
+        "/images/products/rippedv8-quemador-60-capsulas/02.webp",
+        "/images/products/rippedv8-quemador-60-capsulas/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 19910,
+          "transferPrice": 18910,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "thermo-fuel-max-x-120-caps",
+      "slug": "thermo-fuel-max-x-120-caps",
+      "name": "Thermo Fuel Max - 120 Cápsulas",
+      "category": "Quemadores",
+      "description": "🔥 THERMO FUEL MAX – 120 CÁPSULAS | STAR NUTRITION\n\nUna fórmula con extractos naturales, vitaminas y minerales, diseñada para acompañar tus objetivos deportivos y tu rutina diaria.\n\n🔥 Fórmula con extractos naturales\n⚡ Acompaña el metabolismo energético\n🏋️ Ideal para complementar tu rutina de entrenamiento\n💪 Diseñado para acompañar objetivos de composición corporal\n🌿 Combina vitaminas, minerales y extractos naturales\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/thermo-fuel-max-x-120-caps/01.webp",
+        "/images/products/thermo-fuel-max-x-120-caps/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 22010,
+          "transferPrice": 20910,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "tnt-dynamite-240grs",
+      "slug": "tnt-dynamite-240grs",
+      "name": "TNT-Dynamite - 240 Gr",
+      "category": "Pre entrenos",
+      "description": "⚡ TNT-DYNAMITE – 240 G | STAR NUTRITION\n\nUna fórmula diseñada para acompañar tus entrenamientos de alta intensidad, ideal para quienes buscan potenciar su rendimiento y afrontar cada sesión con mayor energía.\n\n⚡ Acompaña el rendimiento y la energía durante el entrenamiento\n🔥 Favorece la resistencia y el rendimiento físico\n🎯 Ayuda a mantener el enfoque y la concentración durante la actividad\n💪 Ideal para entrenamientos de alta intensidad\n🩸 Acompaña la circulación y el flujo sanguíneo\n🥤 Fácil de preparar y consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/tnt-dynamite-240grs/01.webp",
+        "/images/products/tnt-dynamite-240grs/02.webp",
+        "/images/products/tnt-dynamite-240grs/03.webp",
+        "/images/products/tnt-dynamite-240grs/04.webp",
+        "/images/products/tnt-dynamite-240grs/05.webp",
+        "/images/products/tnt-dynamite-240grs/06.webp"
+      ],
+      "variants": [
+        {
+          "id": "acai-power",
+          "name": "Acaí Power",
+          "price": 25220,
+          "transferPrice": 23960,
+          "inStock": false
+        },
+        {
+          "id": "blue-raz",
+          "name": "Blue Raz",
+          "price": 25220,
+          "transferPrice": 23960,
+          "inStock": false
+        },
+        {
+          "id": "citrus-slush",
+          "name": "Citrus Slush",
+          "price": 25220,
+          "transferPrice": 23960,
+          "inStock": false
+        },
+        {
+          "id": "grape-attack",
+          "name": "Grape Attack",
+          "price": 25220,
+          "transferPrice": 23960,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "vitamina-c",
+      "slug": "vitamina-c",
+      "name": "Vitamina C - 60 Cápsulas",
+      "category": "Vitamínicos",
+      "description": "🍊 VITAMINA C – 60 CÁPSULAS | STAR NUTRITION\n\nUna forma práctica de incorporar Vitamina C (ácido ascórbico) a tu rutina diaria. La vitamina C contribuye al funcionamiento normal del sistema inmunitario, a la protección de las células frente al daño oxidativo y a la formación normal de colágeno.\n\n✨ Vitamina C en cápsulas\n🛡️ Contribuye al funcionamiento normal del sistema inmunitario\n💪 Contribuye a la formación normal de colágeno\n⚡ Contribuye al metabolismo energético normal\n🔬 Contribuye a la protección de las células frente al estrés oxidativo\n🌾 Libre de gluten",
+      "images": [
+        "/images/products/vitamina-c/01.webp",
+        "/images/products/vitamina-c/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 8280,
+          "transferPrice": 7870,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "vitamina-k2-d3-60-capsulas",
+      "slug": "vitamina-k2-d3-60-capsulas",
+      "name": "Vitaminas K2+D3 - 60 Cápsulas",
+      "category": "Vitamínicos",
+      "description": "Vitamina K2 + D3 de Star Nutrition\n\nUna combinación ideal para complementar tu alimentación y cuidar tu salud ósea. La vitamina D3 contribuye al mantenimiento de huesos y músculos y favorece la absorción normal del calcio, mientras que la vitamina K2 contribuye al mantenimiento de los huesos y al proceso normal de coagulación sanguínea.\n\n💊 D3 + K2 en una sola fórmula\n🦴 Contribuye al mantenimiento de huesos normales\n☀️ La vitamina D contribuye a la absorción normal del calcio\n⚡ Ideal para complementar tu rutina diaria",
+      "images": [
+        "/images/products/vitamina-k2-d3-60-capsulas/01.webp",
+        "/images/products/vitamina-k2-d3-60-capsulas/02.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 23340,
+          "transferPrice": 22170,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "whey-protein-2lb-doypack",
+      "slug": "whey-protein-2lb-doypack",
+      "name": "Whey Protein Doypack 2 Lb",
+      "category": "Proteínas",
+      "description": "🥛 WHEY PROTEIN DOYPACK – 2 LB | STAR NUTRITION\n\nUna proteína de suero de leche (Whey Protein) pensada para acompañar tus entrenamientos y complementar tu alimentación diaria.\n\n💪 Aporta proteínas de alto valor biológico\n🏋️ Contribuye al mantenimiento y desarrollo de la masa muscular\n🔄 Acompaña la recuperación muscular después del entrenamiento\n⚡ Aporta aminoácidos esenciales para complementar tu alimentación\n🥤 Fácil de preparar y consumir en cualquier momento del día\n🎒 Práctico formato Doypack\n🍫 Sabores disponibles: Chocolate | Vainilla | Frutilla | Banana | Cookies & Cream | Pistacho",
+      "images": [
+        "/images/products/whey-protein-2lb-doypack/01.webp",
+        "/images/products/whey-protein-2lb-doypack/02.webp",
+        "/images/products/whey-protein-2lb-doypack/03.webp",
+        "/images/products/whey-protein-2lb-doypack/04.webp",
+        "/images/products/whey-protein-2lb-doypack/05.webp",
+        "/images/products/whey-protein-2lb-doypack/06.webp",
+        "/images/products/whey-protein-2lb-doypack/07.webp"
+      ],
+      "variants": [
+        {
+          "id": "banana",
+          "name": "Banana",
+          "price": 78890,
+          "transferPrice": 74950,
+          "inStock": false
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "price": 78890,
+          "transferPrice": 74950,
+          "inStock": false
+        },
+        {
+          "id": "cookies-cream",
+          "name": "Cookies & Cream",
+          "price": 78890,
+          "transferPrice": 74950,
+          "inStock": false
+        },
+        {
+          "id": "frutilla",
+          "name": "Frutilla",
+          "price": 78890,
+          "transferPrice": 74950,
+          "inStock": false
+        },
+        {
+          "id": "pistacho",
+          "name": "Pistacho",
+          "price": 78890,
+          "transferPrice": 74950,
+          "inStock": false
+        },
+        {
+          "id": "vainilla",
+          "name": "Vainilla",
+          "price": 78890,
+          "transferPrice": 74950,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    },
+    {
+      "id": "zma-x-90-caps",
+      "slug": "zma-x-90-caps",
+      "name": "ZMA - 90 Cápsulas",
+      "category": "Recuperadores musculares",
+      "description": "🌙 ZMA – 90 CÁPSULAS | STAR NUTRITION\n\nUna fórmula que combina zinc, magnesio y vitamina B6, ideal para complementar tu alimentación y acompañar tu rutina diaria y deportiva.\n\n💪 Aporta Zinc + Magnesio + Vitamina B6\n⚡ Contribuye al metabolismo energético normal\n🧠 Acompaña el funcionamiento normal del sistema nervioso\n💪 Contribuye al funcionamiento normal de los músculos\n🌙 Ideal para incorporar como parte de tu rutina nocturna\n💊 Fácil y práctico de consumir\n🌾 Libre de gluten | Sin TACC",
+      "images": [
+        "/images/products/zma-x-90-caps/01.webp",
+        "/images/products/zma-x-90-caps/02.webp",
+        "/images/products/zma-x-90-caps/03.webp"
+      ],
+      "variants": [
+        {
+          "id": "unico",
+          "name": "Único",
+          "price": 16450,
+          "transferPrice": 15630,
+          "inStock": false
+        }
+      ],
+      "brand": "Star Nutrition"
+    }
+  ]
+}

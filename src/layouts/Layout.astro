@@ -1,0 +1,48 @@
+---
+import { ClientRouter } from "astro:transitions";
+import "../styles/global.css";
+import site from "../data/site.json";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const pageTitle = title ? `${title} · ${site.name}` : `${site.name} | ${site.tagline}`;
+const pageDescription = description ?? site.description;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
+    <link rel="icon" type="image/png" href={site.logo} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <ClientRouter />
+  </head>
+  <body class="min-h-dvh bg-ink text-paper antialiased">
+    <a
+      href="#contenido"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-acid focus:px-4 focus:py-2 focus:text-ink"
+    >
+      Saltar al contenido
+    </a>
+    <Header />
+    <main id="contenido">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

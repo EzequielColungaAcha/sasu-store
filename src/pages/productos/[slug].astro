@@ -1,0 +1,217 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import StockBadge from "../../components/StockBadge.astro";
+import WhatsAppButton from "../../components/WhatsAppButton.astro";
+import catalog from "../../data/products.json";
+import site from "../../data/site.json";
+import {
+  consultMessage,
+  featuredVariant,
+  formatARS,
+  imageSrc,
+  srcSet,
+  transitionName,
+  visibleFlavors,
+  whatsappHref,
+  type Product,
+} from "../../lib/catalog";
+
+export function getStaticPaths() {
+  return (catalog.products as Product[]).map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const initial = featuredVariant(product);
+const flavors = visibleFlavors(product);
+const showFlavors = flavors.length > 1 || flavors[0]?.name !== "Único";
+const images = product.images.length ? product.images : ["/placeholder.svg"];
+const hero = images[0];
+const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name));
+---
+
+<Layout title={product.name} description={product.description.slice(0, 160)}>
+  <article class="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:py-14">
+    <div>
+      <a href="/#catalogo" class="text-sm font-semibold text-fog hover:text-acid">← Volver al catálogo</a>
+      <div class="mt-4 overflow-hidden rounded-[2rem] border border-line bg-panel">
+        <img
+          id="foto-principal"
+          src={imageSrc(hero, 1080)}
+          srcset={product.images.length ? srcSet(hero, [480, 720, 1080, 1400]) : undefined}
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          alt={product.name}
+          width="1080"
+          height="1080"
+          transition:name={transitionName(product.id)}
+          class="aspect-square w-full object-contain p-6"
+        />
+      </div>
+      {
+        images.length > 1 && (
+          <div class="mt-4 grid grid-cols-4 gap-3" data-thumbs>
+            {images.map((src, i) => (
+              <button
+                type="button"
+                class:list={[
+                  "overflow-hidden rounded-2xl border bg-raised p-2",
+                  i === 0 ? "border-acid" : "border-line",
+                ]}
+                data-src={src}
+                aria-label={`Ver imagen ${i + 1}`}
+              >
+                <img
+                  src={imageSrc(src, 240)}
+                  alt=""
+                  width="240"
+                  height="240"
+                  class="aspect-square w-full object-contain"
+                />
+              </button>
+            ))}
+          </div>
+        )
+      }
+    </div>
+
+    <div data-detail data-name={product.name} data-phone={site.whatsapp}>
+      <p class="text-xs font-bold uppercase tracking-[0.22em] text-acid">
+        {product.category}
+        {product.brand ? ` · ${product.brand}` : ""}
+      </p>
+      <h1 class="mt-3 font-display text-5xl tracking-[0.08em] sm:text-6xl">{product.name}</h1>
+      <div class="mt-4" data-stock>
+        <StockBadge inStock={initial.inStock} />
+      </div>
+
+      {
+        showFlavors && (
+          <div class="mt-8">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-fog">Sabor</p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              {product.variants.map((variant) => (
+                <button
+                  type="button"
+                  class:list={[
+                    "rounded-full border px-3 py-2 text-sm font-semibold",
+                    variant.id === initial.id
+                      ? "border-acid bg-acid text-ink"
+                      : "border-line text-paper hover:border-acid",
+                  ]}
+                  data-variant={JSON.stringify(variant)}
+                >
+                  {variant.name}
+                  {!variant.inStock && <span class="opacity-70"> · agotado</span>}
+                </button>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      <div class="mt-8 rounded-3xl border border-line bg-panel p-6" data-prices>
+        <p class="font-extrabold text-4xl text-acid" data-transfer>
+          {formatARS(initial.transferPrice)}
+        </p>
+        <p class="mt-1 text-sm uppercase tracking-[0.14em] text-fog">Precio transferencia o efectivo</p>
+        <p class="mt-3 text-paper/60" data-list>
+          Precio de lista {formatARS(initial.price)}
+        </p>
+      </div>
+
+      <div class="mt-6">
+        <WhatsAppButton href={wa} />
+        <p class="mt-3 text-xs text-fog">
+          Te respondemos por WhatsApp para coordinar el pago y la entrega.
+        </p>
+      </div>
+
+      {
+        product.description && (
+          <div class="mt-10 border-t border-line pt-8">
+            <h2 class="font-display text-3xl tracking-[0.1em]">Descripción</h2>
+            <p class="mt-4 whitespace-pre-line text-sm leading-7 text-fog">{product.description}</p>
+          </div>
+        )
+      }
+    </div>
+  </article>
+</Layout>
+
+<script>
+  import {
+    consultMessage,
+    formatARS,
+    imageSrc,
+    srcSet,
+    whatsappHref,
+    type Variant,
+  } from "../../lib/catalog";
+
+  document.addEventListener("astro:page-load", () => {
+    const root = document.querySelector<HTMLElement>("[data-detail]");
+    if (!root || root.dataset.bound === "1") return;
+    root.dataset.bound = "1";
+
+    const productName = root.dataset.name ?? "";
+    const phone = root.dataset.phone ?? "";
+
+    const setActive = (buttons: NodeListOf<HTMLButtonElement>, active: HTMLButtonElement) => {
+      for (const btn of buttons) {
+        const on = btn === active;
+        btn.classList.toggle("border-acid", on);
+        btn.classList.toggle("bg-acid", on);
+        btn.classList.toggle("text-ink", on);
+        btn.classList.toggle("border-line", !on);
+        btn.classList.toggle("text-paper", !on);
+        btn.classList.toggle("hover:border-acid", !on);
+      }
+    };
+
+    const paint = (variant: Variant) => {
+      const stock = root.querySelector("[data-stock]");
+      if (stock) {
+        const ok = variant.inStock;
+        stock.innerHTML = `<span class="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.16em] ${
+          ok ? "bg-ok/15 text-ok" : "bg-warn/15 text-warn"
+        }">${ok ? "Con stock" : "Sin stock"}</span>`;
+      }
+      const transfer = root.querySelector("[data-transfer]");
+      const list = root.querySelector("[data-list]");
+      if (transfer) transfer.textContent = formatARS(variant.transferPrice);
+      if (list) list.textContent = `Precio de lista ${formatARS(variant.price)}`;
+      const wa = document.querySelector<HTMLAnchorElement>("[data-wa]");
+      if (wa) wa.href = whatsappHref(phone, consultMessage(productName, variant.name));
+    };
+
+    const variantButtons = root.querySelectorAll<HTMLButtonElement>("[data-variant]");
+    variantButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const variant = JSON.parse(btn.dataset.variant || "{}") as Variant;
+        setActive(variantButtons, btn);
+        paint(variant);
+      });
+    });
+
+    const thumbs = document.querySelectorAll<HTMLButtonElement>("[data-thumbs] [data-src]");
+    const hero = document.querySelector<HTMLImageElement>("#foto-principal");
+    thumbs.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const src = btn.dataset.src;
+        if (!hero || !src) return;
+        hero.src = imageSrc(src, 1080);
+        hero.srcset = srcSet(src, [480, 720, 1080, 1400]) ?? "";
+        thumbs.forEach((thumb) => {
+          thumb.classList.toggle("border-acid", thumb === btn);
+          thumb.classList.toggle("border-line", thumb !== btn);
+        });
+      });
+    });
+  });
+</script>
