@@ -2,10 +2,13 @@
   "name": "sasu-store",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://ezequielcolungaacha.github.io/sasu-store/",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
+    "predeploy" : "pnpm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -21,5 +24,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
