@@ -19,9 +19,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 21520,
-          "transferPrice": 20440,
-          "inStock": false
+          "inStock": false,
+          "cost": 14957.19
         }
       ],
       "brand": "Star Nutrition"
@@ -41,9 +40,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 17970,
-          "transferPrice": 17070,
-          "inStock": false
+          "inStock": false,
+          "cost": 12487.11
         }
       ],
       "brand": "Star Nutrition"
@@ -62,9 +60,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 28170,
-          "transferPrice": 26760,
-          "inStock": false
+          "inStock": false,
+          "cost": 19579.29
         }
       ],
       "brand": "Star Nutrition"
@@ -84,9 +81,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 10240,
-          "transferPrice": 9730,
-          "inStock": false
+          "inStock": false,
+          "cost": 7120.08
         }
       ],
       "brand": "Star Nutrition"
@@ -105,9 +101,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 12570,
-          "transferPrice": 11940,
-          "inStock": false
+          "inStock": false,
+          "cost": 8733.630000000001
         }
       ],
       "brand": "Star Nutrition"
@@ -128,16 +123,14 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 14220,
-          "transferPrice": 13510,
-          "inStock": false
+          "inStock": false,
+          "cost": 9885.9
         },
         {
           "id": "sin-sabor",
           "name": "Sin sabor",
-          "price": 14220,
-          "transferPrice": 13510,
-          "inStock": false
+          "inStock": false,
+          "cost": 9885.9
         }
       ],
       "brand": "Star Nutrition"
@@ -158,16 +151,14 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 31610,
-          "transferPrice": 30030,
-          "inStock": false
+          "inStock": false,
+          "cost": 21969.39
         },
         {
           "id": "sin-sabor",
           "name": "Sin sabor",
-          "price": 31610,
-          "transferPrice": 30030,
-          "inStock": false
+          "inStock": false,
+          "cost": 21969.39
         }
       ],
       "brand": "Star Nutrition"
@@ -188,9 +179,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 24470,
-          "transferPrice": 23250,
-          "inStock": false
+          "inStock": false,
+          "cost": 17006.91
         }
       ],
       "brand": "Star Nutrition"
@@ -211,16 +201,14 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 19260,
-          "transferPrice": 18300,
-          "inStock": false
+          "inStock": false,
+          "cost": 13386.42
         },
         {
           "id": "limon",
           "name": "Limón",
-          "price": 19260,
-          "transferPrice": 18300,
-          "inStock": false
+          "inStock": false,
+          "cost": 13386.42
         }
       ],
       "brand": "Star Nutrition"
@@ -240,9 +228,8 @@
         {
           "id": "limon",
           "name": "Limón",
-          "price": 22910,
-          "transferPrice": 21760,
-          "inStock": false
+          "inStock": false,
+          "cost": 15925.320000000002
         }
       ],
       "brand": "Star Nutrition"
@@ -262,9 +249,8 @@
         {
           "id": "naranja",
           "name": "Naranja",
-          "price": 22910,
-          "transferPrice": 21760,
-          "inStock": false
+          "inStock": false,
+          "cost": 15925.320000000002
         }
       ],
       "brand": "Star Nutrition"
@@ -284,16 +270,14 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 75730,
-          "transferPrice": 71940,
-          "inStock": false
+          "inStock": false,
+          "cost": 52632.420000000006
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 75730,
-          "transferPrice": 71940,
-          "inStock": false
+          "inStock": false,
+          "cost": 52632.420000000006
         }
       ],
       "brand": "Star Nutrition"
@@ -312,9 +296,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 15310,
-          "transferPrice": 14540,
-          "inStock": true
+          "inStock": true,
+          "cost": 10639.2
         }
       ],
       "brand": "Star Nutrition"
@@ -334,9 +317,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 79670,
-          "transferPrice": 75690,
-          "inStock": false
+          "inStock": false,
+          "cost": 55372.856470588245
         }
       ],
       "brand": "Star Nutrition"
@@ -358,23 +340,20 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 26320,
-          "transferPrice": 25000,
-          "inStock": true
+          "inStock": true,
+          "cost": 18294.522352941178
         },
         {
           "id": "grape",
           "name": "Grape",
-          "price": 26320,
-          "transferPrice": 25000,
-          "inStock": false
+          "inStock": false,
+          "cost": 18294.522352941178
         },
         {
           "id": "limon",
           "name": "Limón",
-          "price": 26320,
-          "transferPrice": 25000,
-          "inStock": false
+          "inStock": false,
+          "cost": 18294.522352941178
         }
       ],
       "brand": "Star Nutrition"
@@ -394,9 +373,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 26320,
-          "transferPrice": 25000,
-          "inStock": true
+          "inStock": true,
+          "cost": 18294.522352941178
         }
       ],
       "brand": "Star Nutrition"
@@ -416,9 +394,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 29150,
-          "transferPrice": 27690,
-          "inStock": false
+          "inStock": false,
+          "cost": 20257.80705882353
         }
       ],
       "brand": "Star Nutrition"
@@ -437,9 +414,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 43960,
-          "transferPrice": 41760,
-          "inStock": false
+          "inStock": false,
+          "cost": 30550.3905882353
         }
       ],
       "brand": "Star Nutrition"
@@ -459,16 +435,14 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 87610,
-          "transferPrice": 83230,
-          "inStock": false
+          "inStock": false,
+          "cost": 60890.82
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 87610,
-          "transferPrice": 83230,
-          "inStock": false
+          "inStock": false,
+          "cost": 60890.82
         }
       ],
       "brand": "Star Nutrition"
@@ -489,9 +463,8 @@
         {
           "id": "limon",
           "name": "Limón",
-          "price": 38030,
-          "transferPrice": 36130,
-          "inStock": false
+          "inStock": false,
+          "cost": 26431.530000000002
         }
       ],
       "brand": "Star Nutrition"
@@ -512,9 +485,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 28380,
-          "transferPrice": 26960,
-          "inStock": false
+          "inStock": false,
+          "cost": 19727.16
         }
       ],
       "brand": "Star Nutrition"
@@ -536,16 +508,14 @@
         {
           "id": "blue-raz",
           "name": "Blue Raz",
-          "price": 18460,
-          "transferPrice": 17540,
-          "inStock": false
+          "inStock": false,
+          "cost": 12828.42
         },
         {
           "id": "lima-limon",
           "name": "Lima Limón",
-          "price": 18460,
-          "transferPrice": 17540,
-          "inStock": false
+          "inStock": false,
+          "cost": 12828.42
         }
       ],
       "brand": "Star Nutrition"
@@ -564,9 +534,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 106640,
-          "transferPrice": 101310,
-          "inStock": false
+          "inStock": false,
+          "cost": 74116.35
         }
       ],
       "brand": "Star Nutrition"
@@ -589,9 +558,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 17930,
-          "transferPrice": 17030,
-          "inStock": false
+          "inStock": false,
+          "cost": 12464.79
         }
       ],
       "brand": "Star Nutrition"
@@ -613,9 +581,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 43750,
-          "transferPrice": 41560,
-          "inStock": true
+          "inStock": true,
+          "cost": 30404.49
         }
       ],
       "brand": "Star Nutrition"
@@ -638,9 +605,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 107010,
-          "transferPrice": 101660,
-          "inStock": false
+          "inStock": false,
+          "cost": 74372.1
         }
       ],
       "brand": "Star Nutrition"
@@ -659,9 +625,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 17590,
-          "transferPrice": 16710,
-          "inStock": false
+          "inStock": false,
+          "cost": 12225.78
         }
       ],
       "brand": "Star Nutrition"
@@ -680,9 +645,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 13990,
-          "transferPrice": 13290,
-          "inStock": false
+          "inStock": false,
+          "cost": 9721.29
         }
       ],
       "brand": "Star Nutrition"
@@ -703,9 +667,8 @@
         {
           "id": "naranja",
           "name": "Naranja",
-          "price": 14680,
-          "transferPrice": 13950,
-          "inStock": false
+          "inStock": false,
+          "cost": 10199.310000000001
         }
       ],
       "brand": "Star Nutrition"
@@ -724,9 +687,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 47880,
-          "transferPrice": 45490,
-          "inStock": false
+          "inStock": false,
+          "cost": 33275.4
         }
       ],
       "brand": "Star Nutrition"
@@ -745,9 +707,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 19340,
-          "transferPrice": 18370,
-          "inStock": false
+          "inStock": false,
+          "cost": 13443.150000000001
         }
       ],
       "brand": "Star Nutrition"
@@ -766,9 +727,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 29010,
-          "transferPrice": 27560,
-          "inStock": false
+          "inStock": false,
+          "cost": 20161.47
         }
       ],
       "brand": "Star Nutrition"
@@ -793,23 +753,20 @@
         {
           "id": "fruit-punch",
           "name": "Fruit Punch",
-          "price": 31120,
-          "transferPrice": 29560,
-          "inStock": false
+          "inStock": false,
+          "cost": 21628.08
         },
         {
           "id": "green-lemonade",
           "name": "Green Lemonade",
-          "price": 31120,
-          "transferPrice": 29560,
-          "inStock": false
+          "inStock": false,
+          "cost": 21628.08
         },
         {
           "id": "strawberry-lime",
           "name": "Strawberry-Lime",
-          "price": 31120,
-          "transferPrice": 29560,
-          "inStock": false
+          "inStock": false,
+          "cost": 21628.08
         }
       ],
       "brand": "Star Nutrition"
@@ -831,30 +788,26 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 67340,
-          "transferPrice": 63970,
-          "inStock": false
+          "inStock": false,
+          "cost": 46801.32
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 67340,
-          "transferPrice": 63970,
-          "inStock": false
+          "inStock": false,
+          "cost": 46801.32
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 67340,
-          "transferPrice": 63970,
-          "inStock": false
+          "inStock": false,
+          "cost": 46801.32
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 67340,
-          "transferPrice": 63970,
-          "inStock": false
+          "inStock": false,
+          "cost": 46801.32
         }
       ],
       "brand": "Star Nutrition"
@@ -877,30 +830,26 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 183380,
-          "transferPrice": 174210,
-          "inStock": false
+          "inStock": false,
+          "cost": 127448.13
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 183380,
-          "transferPrice": 174210,
-          "inStock": false
+          "inStock": false,
+          "cost": 127448.13
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 183380,
-          "transferPrice": 174210,
-          "inStock": false
+          "inStock": false,
+          "cost": 127448.13
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 183380,
-          "transferPrice": 174210,
-          "inStock": false
+          "inStock": false,
+          "cost": 127448.13
         }
       ],
       "brand": "Star Nutrition"
@@ -921,9 +870,8 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 109290,
-          "transferPrice": 103830,
-          "inStock": false
+          "inStock": false,
+          "cost": 75955.89
         }
       ],
       "brand": "Star Nutrition"
@@ -943,9 +891,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 34540,
-          "transferPrice": 32810,
-          "inStock": false
+          "inStock": false,
+          "cost": 24007.02
         }
       ],
       "brand": "Star Nutrition"
@@ -965,16 +912,14 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 146990,
-          "transferPrice": 139640,
-          "inStock": false
+          "inStock": false,
+          "cost": 102157.71
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 146990,
-          "transferPrice": 139640,
-          "inStock": false
+          "inStock": false,
+          "cost": 102157.71
         }
       ],
       "brand": "Star Nutrition"
@@ -998,37 +943,32 @@
         {
           "id": "banana",
           "name": "Banana",
-          "price": 106450,
-          "transferPrice": 101130,
-          "inStock": false
+          "inStock": false,
+          "cost": 73983.36
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 106450,
-          "transferPrice": 101130,
-          "inStock": false
+          "inStock": false,
+          "cost": 73983.36
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 106450,
-          "transferPrice": 101130,
-          "inStock": true
+          "inStock": true,
+          "cost": 73983.36
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 106450,
-          "transferPrice": 101130,
-          "inStock": false
+          "inStock": false,
+          "cost": 73983.36
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 106450,
-          "transferPrice": 101130,
-          "inStock": true
+          "inStock": true,
+          "cost": 73983.36
         }
       ],
       "brand": "Star Nutrition"
@@ -1051,37 +991,32 @@
         {
           "id": "banana",
           "name": "Banana",
-          "price": 312580,
-          "transferPrice": 296950,
-          "inStock": false
+          "inStock": false,
+          "cost": 217239.63
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 312580,
-          "transferPrice": 296950,
-          "inStock": false
+          "inStock": false,
+          "cost": 217239.63
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 312580,
-          "transferPrice": 296950,
-          "inStock": false
+          "inStock": false,
+          "cost": 217239.63
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 312580,
-          "transferPrice": 296950,
-          "inStock": false
+          "inStock": false,
+          "cost": 217239.63
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 312580,
-          "transferPrice": 296950,
-          "inStock": false
+          "inStock": false,
+          "cost": 217239.63
         }
       ],
       "brand": "Star Nutrition"
@@ -1101,16 +1036,14 @@
         {
           "id": "lemonade",
           "name": "Lemonade",
-          "price": 40280,
-          "transferPrice": 38270,
-          "inStock": false
+          "inStock": false,
+          "cost": 27991.140000000003
         },
         {
           "id": "strawberry-lime",
           "name": "Strawberry-Lime",
-          "price": 40280,
-          "transferPrice": 38270,
-          "inStock": false
+          "inStock": false,
+          "cost": 27991.140000000003
         }
       ],
       "brand": "Star Nutrition"
@@ -1132,30 +1065,26 @@
         {
           "id": "acai-power",
           "name": "Acaí Power",
-          "price": 33770,
-          "transferPrice": 32080,
-          "inStock": false
+          "inStock": false,
+          "cost": 23472.27
         },
         {
           "id": "grape-attack",
           "name": "Grape Attack",
-          "price": 33770,
-          "transferPrice": 32080,
-          "inStock": false
+          "inStock": false,
+          "cost": 23472.27
         },
         {
           "id": "lima-limon",
           "name": "Lima Limón",
-          "price": 33770,
-          "transferPrice": 32080,
-          "inStock": false
+          "inStock": false,
+          "cost": 23472.27
         },
         {
           "id": "watermelon",
           "name": "Watermelon",
-          "price": 33770,
-          "transferPrice": 32080,
-          "inStock": false
+          "inStock": false,
+          "cost": 23472.27
         }
       ],
       "brand": "Star Nutrition"
@@ -1174,9 +1103,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 21750,
-          "transferPrice": 20660,
-          "inStock": false
+          "inStock": false,
+          "cost": 15117.150000000001
         }
       ],
       "brand": "Star Nutrition"
@@ -1196,9 +1124,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 20010,
-          "transferPrice": 19010,
-          "inStock": false
+          "inStock": false,
+          "cost": 13910.01
         }
       ],
       "brand": "Star Nutrition"
@@ -1217,9 +1144,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 22130,
-          "transferPrice": 21020,
-          "inStock": false
+          "inStock": false,
+          "cost": 15378.480000000001
         }
       ],
       "brand": "Star Nutrition"
@@ -1242,30 +1168,26 @@
         {
           "id": "acai-power",
           "name": "Acaí Power",
-          "price": 25350,
-          "transferPrice": 24080,
-          "inStock": false
+          "inStock": false,
+          "cost": 17621.64
         },
         {
           "id": "blue-raz",
           "name": "Blue Raz",
-          "price": 25350,
-          "transferPrice": 24080,
-          "inStock": false
+          "inStock": false,
+          "cost": 17621.64
         },
         {
           "id": "citrus-slush",
           "name": "Citrus Slush",
-          "price": 25350,
-          "transferPrice": 24080,
-          "inStock": false
+          "inStock": false,
+          "cost": 17621.64
         },
         {
           "id": "grape-attack",
           "name": "Grape Attack",
-          "price": 25350,
-          "transferPrice": 24080,
-          "inStock": false
+          "inStock": false,
+          "cost": 17621.64
         }
       ],
       "brand": "Star Nutrition"
@@ -1284,9 +1206,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 8320,
-          "transferPrice": 7900,
-          "inStock": false
+          "inStock": false,
+          "cost": 5782.740000000001
         }
       ],
       "brand": "Star Nutrition"
@@ -1305,9 +1226,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 23470,
-          "transferPrice": 22300,
-          "inStock": false
+          "inStock": false,
+          "cost": 16312.2
         }
       ],
       "brand": "Star Nutrition"
@@ -1331,44 +1251,38 @@
         {
           "id": "banana",
           "name": "Banana",
-          "price": 99150,
-          "transferPrice": 94190,
-          "inStock": false
+          "inStock": false,
+          "cost": 68910.21
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 99150,
-          "transferPrice": 94190,
-          "inStock": false
+          "inStock": false,
+          "cost": 68910.21
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 99150,
-          "transferPrice": 94190,
-          "inStock": false
+          "inStock": false,
+          "cost": 68910.21
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 99150,
-          "transferPrice": 94190,
-          "inStock": false
+          "inStock": false,
+          "cost": 68910.21
         },
         {
           "id": "pistacho",
           "name": "Pistacho",
-          "price": 99150,
-          "transferPrice": 94190,
-          "inStock": false
+          "inStock": false,
+          "cost": 68910.21
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 99150,
-          "transferPrice": 94190,
-          "inStock": false
+          "inStock": false,
+          "cost": 68910.21
         }
       ],
       "brand": "Star Nutrition"
@@ -1388,9 +1302,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 16540,
-          "transferPrice": 15710,
-          "inStock": false
+          "inStock": false,
+          "cost": 11496.66
         }
       ],
       "brand": "Star Nutrition"

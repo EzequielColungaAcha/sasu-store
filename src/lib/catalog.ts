@@ -1,6 +1,10 @@
+import site from "../data/site.json";
+import { retailFromCost } from "./pricing.mjs";
+
 export type Variant = {
   id: string;
   name: string;
+  cost: number;
   price: number;
   transferPrice: number;
   inStock: boolean;
@@ -29,6 +33,10 @@ export type Site = {
   tagline: string;
   description: string;
   logo?: string;
+  pricing: {
+    margin: number;
+    transferDiscount: number;
+  };
 };
 
 export function isRemoteUrl(url: string) {
@@ -61,6 +69,22 @@ export function formatARS(value: number) {
 
 export function hasStock(product: Product) {
   return product.variants.some((v) => v.inStock);
+}
+
+export function pricedVariant(variant: Pick<Variant, "cost"> & Partial<Variant>) {
+  const { price, transferPrice } = retailFromCost(
+    variant.cost,
+    site.pricing.margin,
+    site.pricing.transferDiscount,
+  );
+  return { ...variant, price, transferPrice } as Variant;
+}
+
+export function withRetail(product: Product) {
+  return {
+    ...product,
+    variants: product.variants.map((variant) => pricedVariant(variant)),
+  };
 }
 
 export function cheapest(product: Product) {

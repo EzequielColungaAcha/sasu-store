@@ -4,11 +4,14 @@
  *
  * Re-run when the sheet or official catalog changes:
  *   npm run catalog
+ * Then refresh wholesale cost from list.xlsx:
+ *   node scripts/update-prices.mjs
  */
 const SHEET_ID = "1pY-UBagwQxN0E9sUBukZUQYY8uDsaTZ6jZ4u8H5ilts";
 const SHEET_TAB = "Data Septiembre";
 const SHOPIFY_PRODUCTS = "https://starnutrition.com.ar/products.json?limit=250";
 const OUT = new URL("../src/data/products.json", import.meta.url);
+const SHEET_MARGIN = 0.305;
 
 const CATEGORY_LABELS = {
   VITAMINICOS: "Vitamínicos",
@@ -196,6 +199,11 @@ function parsePrice(raw) {
   if (!s) return 0;
   const n = Number(s.replace(/,/g, ""));
   return Number.isFinite(n) ? Math.round(n) : 0;
+}
+
+function costFromSheetList(listPrice) {
+  if (listPrice <= 0) return 0;
+  return Number((listPrice * (1 - SHEET_MARGIN)).toFixed(2));
 }
 
 function parseStock(raw) {
@@ -445,9 +453,9 @@ async function main() {
     while (row.length < 14) row.push("");
     const name = (row[1] || "").trim();
     if (!name) continue;
-    const price = parsePrice(row[12]);
+    const listPrice = parsePrice(row[12]);
     const transferPrice = parsePrice(row[13]);
-    if (price <= 0 && transferPrice <= 0) {
+    if (listPrice <= 0 && transferPrice <= 0) {
       currentCategory = name;
       continue;
     }
@@ -469,8 +477,7 @@ async function main() {
           {
             id: "unico",
             name: "Único",
-            price,
-            transferPrice,
+            cost: costFromSheetList(listPrice),
             inStock,
           },
         ],
@@ -502,8 +509,7 @@ async function main() {
       item.variants.push({
         id: vid,
         name: flavor,
-        price,
-        transferPrice,
+        cost: costFromSheetList(listPrice),
         inStock,
       });
     } else {

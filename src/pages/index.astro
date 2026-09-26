@@ -3,9 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import ProductGrid from "../components/ProductGrid.astro";
 import catalog from "../data/products.json";
 import site from "../data/site.json";
-import { categoriesOf, hasStock, type Product } from "../lib/catalog";
+import { categoriesOf, hasStock, withRetail, type Product } from "../lib/catalog";
 
-const products = catalog.products as Product[];
+const products = (catalog.products as Product[]).map(withRetail);
 const categories = categoriesOf(products);
 const inStockCount = products.filter(hasStock).length;
 ---

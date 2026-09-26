@@ -1,7 +1,7 @@
 /**
- * Patches retail prices in src/data/products.json from list.xlsx
- * wholesale unit prices, using the same 30.5% margin + 5% transfer
- * formula as Data Septiembre. Names, copy, images, and stock are left as-is.
+ * Patches wholesale cost in src/data/products.json from list.xlsx.
+ * List and transfer prices are computed at runtime from site.json pricing.
+ * Names, copy, images, and stock are left as-is.
  *
  *   node scripts/update-prices.mjs
  */
@@ -9,13 +9,13 @@ import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { retailFromCost } from "../src/lib/pricing.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const LIST_XLSX = join(ROOT, "list.xlsx");
 const CATALOG = join(ROOT, "src/data/products.json");
+const SITE = join(ROOT, "src/data/site.json");
 const SHEET_NAME = "Hoja1";
-const MARGIN = 0.305;
-const TRANSFER_DISCOUNT = 0.95;
 const MATCH_THRESHOLD = 0.38;
 const AMBIGUOUS_DELTA = 0.04;
 
@@ -327,23 +327,6 @@ function findVariant(product, sheetName) {
   return null;
 }
 
-function excelRound(n, digits) {
-  const p = 10 ** digits;
-  const shifted = n * p;
-  const sign = Math.sign(shifted) || 1;
-  return (Math.trunc(Math.abs(shifted) + 0.5) * sign) / p;
-}
-
-function excelRoundTo10(n) {
-  return excelRound(n / 10, 0) * 10;
-}
-
-function retailFromUnit(unit) {
-  const price = excelRoundTo10(unit / (1 - MARGIN));
-  const transferPrice = excelRoundTo10(price * TRANSFER_DISCOUNT);
-  return { price, transferPrice };
-}
-
 function unzipEntry(xlsxPath, innerPath) {
   return execFileSync("unzip", ["-p", xlsxPath, innerPath], {
     encoding: "utf8",
@@ -443,6 +426,8 @@ function pct(from, to) {
 
 async function main() {
   const catalog = JSON.parse(await readFile(CATALOG, "utf8"));
+  const site = JSON.parse(await readFile(SITE, "utf8"));
+  const { margin, transferDiscount } = site.pricing;
   const rows = readListRows(LIST_XLSX);
   const stockBefore = catalog.products.flatMap((p) =>
     p.variants.map((v) => [`${p.id}::${v.id}`, v.inStock]),
@@ -494,19 +479,26 @@ async function main() {
       continue;
     }
     claimed.set(key, row);
-    const next = retailFromUnit(row.unit);
+    const oldCost = Number(variant.cost);
+    const oldRetail = Number.isFinite(oldCost)
+      ? retailFromCost(oldCost, margin, transferDiscount)
+      : { price: variant.price, transferPrice: variant.transferPrice };
+    const next = retailFromCost(row.unit, margin, transferDiscount);
     diffs.push({
       code: row.code,
       sheet: row.name.trim(),
       product: picked.product.name,
       variant: variant.name,
-      oldPrice: variant.price,
-      oldTransfer: variant.transferPrice,
+      oldCost: Number.isFinite(oldCost) ? oldCost : variant.price,
+      oldPrice: oldRetail.price,
+      oldTransfer: oldRetail.transferPrice,
+      cost: row.unit,
       price: next.price,
       transferPrice: next.transferPrice,
     });
-    variant.price = next.price;
-    variant.transferPrice = next.transferPrice;
+    variant.cost = row.unit;
+    delete variant.price;
+    delete variant.transferPrice;
   }
 
   if (problems.length) {
@@ -554,7 +546,8 @@ async function main() {
   const stockChanged = stockBefore.filter(([k, v], i) => stockAfter[i][1] !== v).length;
 
   diffs.sort((a, b) => Math.abs(b.price - b.oldPrice) - Math.abs(a.price - a.oldPrice));
-  console.log(`Updated ${diffs.length} variants from list.xlsx → ${CATALOG}`);
+  console.log(`Updated ${diffs.length} costs from list.xlsx → ${CATALOG}`);
+  console.log(`Retail uses margin ${(margin * 100).toFixed(1)}% + transfer ${((1 - transferDiscount) * 100).toFixed(0)}%`);
   console.log(`In stock unchanged: ${stockChanged === 0 ? "yes" : `NO (${stockChanged})`}`);
   console.log("Largest moves:");
   for (const d of diffs.slice(0, 12)) {

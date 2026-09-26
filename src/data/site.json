@@ -3,5 +3,9 @@
   "whatsapp": "+542241470235",
   "tagline": "Salud y Suplementos",
   "description": "Catálogo de suplementos y productos para tu salud. Precios de lista y transferencia o efectivo.",
-  "logo": "/SaSu.png"
+  "logo": "/SaSu.png",
+  "pricing": {
+    "margin": 0.25,
+    "transferDiscount": 0.95
+  }
 }
