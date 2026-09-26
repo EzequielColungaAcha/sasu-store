@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-26",
   "source": {
-    "sheet": "Data Septiembre"
+    "sheet": "list.xlsx"
   },
   "products": [
     {
@@ -19,8 +19,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 21410,
-          "transferPrice": 20340,
+          "price": 21520,
+          "transferPrice": 20440,
           "inStock": false
         }
       ],
@@ -41,8 +41,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 17870,
-          "transferPrice": 16980,
+          "price": 17970,
+          "transferPrice": 17070,
           "inStock": false
         }
       ],
@@ -62,8 +62,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 28020,
-          "transferPrice": 26620,
+          "price": 28170,
+          "transferPrice": 26760,
           "inStock": false
         }
       ],
@@ -84,8 +84,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 10190,
-          "transferPrice": 9680,
+          "price": 10240,
+          "transferPrice": 9730,
           "inStock": false
         }
       ],
@@ -105,8 +105,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 15620,
-          "transferPrice": 14840,
+          "price": 12570,
+          "transferPrice": 11940,
           "inStock": false
         }
       ],
@@ -128,15 +128,15 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 14150,
-          "transferPrice": 13440,
+          "price": 14220,
+          "transferPrice": 13510,
           "inStock": false
         },
         {
           "id": "sin-sabor",
           "name": "Sin sabor",
-          "price": 14150,
-          "transferPrice": 13440,
+          "price": 14220,
+          "transferPrice": 13510,
           "inStock": false
         }
       ],
@@ -158,15 +158,15 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 31440,
-          "transferPrice": 29870,
+          "price": 31610,
+          "transferPrice": 30030,
           "inStock": false
         },
         {
           "id": "sin-sabor",
           "name": "Sin sabor",
-          "price": 31440,
-          "transferPrice": 29870,
+          "price": 31610,
+          "transferPrice": 30030,
           "inStock": false
         }
       ],
@@ -188,8 +188,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 24340,
-          "transferPrice": 23120,
+          "price": 24470,
+          "transferPrice": 23250,
           "inStock": false
         }
       ],
@@ -211,15 +211,15 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 19160,
-          "transferPrice": 18200,
+          "price": 19260,
+          "transferPrice": 18300,
           "inStock": false
         },
         {
           "id": "limon",
           "name": "Limón",
-          "price": 19160,
-          "transferPrice": 18200,
+          "price": 19260,
+          "transferPrice": 18300,
           "inStock": false
         }
       ],
@@ -240,8 +240,8 @@
         {
           "id": "limon",
           "name": "Limón",
-          "price": 22790,
-          "transferPrice": 21650,
+          "price": 22910,
+          "transferPrice": 21760,
           "inStock": false
         }
       ],
@@ -262,8 +262,8 @@
         {
           "id": "naranja",
           "name": "Naranja",
-          "price": 22790,
-          "transferPrice": 21650,
+          "price": 22910,
+          "transferPrice": 21760,
           "inStock": false
         }
       ],
@@ -284,15 +284,15 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 60260,
-          "transferPrice": 57250,
+          "price": 75730,
+          "transferPrice": 71940,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 60260,
-          "transferPrice": 57250,
+          "price": 75730,
+          "transferPrice": 71940,
           "inStock": false
         }
       ],
@@ -312,8 +312,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 16620,
-          "transferPrice": 15790,
+          "price": 15310,
+          "transferPrice": 14540,
           "inStock": true
         }
       ],
@@ -334,8 +334,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 86470,
-          "transferPrice": 82150,
+          "price": 79670,
+          "transferPrice": 75690,
           "inStock": false
         }
       ],
@@ -358,22 +358,22 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
-          "price": 28570,
-          "transferPrice": 27140,
+          "price": 26320,
+          "transferPrice": 25000,
           "inStock": true
         },
         {
           "id": "grape",
           "name": "Grape",
-          "price": 28570,
-          "transferPrice": 27140,
+          "price": 26320,
+          "transferPrice": 25000,
           "inStock": false
         },
         {
           "id": "limon",
           "name": "Limón",
-          "price": 28570,
-          "transferPrice": 27140,
+          "price": 26320,
+          "transferPrice": 25000,
           "inStock": false
         }
       ],
@@ -394,8 +394,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 28570,
-          "transferPrice": 27140,
+          "price": 26320,
+          "transferPrice": 25000,
           "inStock": true
         }
       ],
@@ -416,8 +416,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 31640,
-          "transferPrice": 30060,
+          "price": 29150,
+          "transferPrice": 27690,
           "inStock": false
         }
       ],
@@ -437,8 +437,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 47710,
-          "transferPrice": 45320,
+          "price": 43960,
+          "transferPrice": 41760,
           "inStock": false
         }
       ],
@@ -459,15 +459,15 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 69710,
-          "transferPrice": 66220,
+          "price": 87610,
+          "transferPrice": 83230,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 69710,
-          "transferPrice": 66220,
+          "price": 87610,
+          "transferPrice": 83230,
           "inStock": false
         }
       ],
@@ -489,8 +489,8 @@
         {
           "id": "limon",
           "name": "Limón",
-          "price": 37830,
-          "transferPrice": 35940,
+          "price": 38030,
+          "transferPrice": 36130,
           "inStock": false
         }
       ],
@@ -512,8 +512,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 28230,
-          "transferPrice": 26820,
+          "price": 28380,
+          "transferPrice": 26960,
           "inStock": false
         }
       ],
@@ -536,15 +536,15 @@
         {
           "id": "blue-raz",
           "name": "Blue Raz",
-          "price": 18360,
-          "transferPrice": 17440,
+          "price": 18460,
+          "transferPrice": 17540,
           "inStock": false
         },
         {
           "id": "lima-limon",
           "name": "Lima Limón",
-          "price": 18360,
-          "transferPrice": 17440,
+          "price": 18460,
+          "transferPrice": 17540,
           "inStock": false
         }
       ],
@@ -564,8 +564,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 106070,
-          "transferPrice": 100770,
+          "price": 106640,
+          "transferPrice": 101310,
           "inStock": false
         }
       ],
@@ -589,8 +589,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 17840,
-          "transferPrice": 16950,
+          "price": 17930,
+          "transferPrice": 17030,
           "inStock": false
         }
       ],
@@ -613,8 +613,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 43510,
-          "transferPrice": 41330,
+          "price": 43750,
+          "transferPrice": 41560,
           "inStock": true
         }
       ],
@@ -638,8 +638,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 85150,
-          "transferPrice": 80890,
+          "price": 107010,
+          "transferPrice": 101660,
           "inStock": false
         }
       ],
@@ -659,8 +659,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 17500,
-          "transferPrice": 16630,
+          "price": 17590,
+          "transferPrice": 16710,
           "inStock": false
         }
       ],
@@ -680,8 +680,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 13910,
-          "transferPrice": 13210,
+          "price": 13990,
+          "transferPrice": 13290,
           "inStock": false
         }
       ],
@@ -703,8 +703,8 @@
         {
           "id": "naranja",
           "name": "Naranja",
-          "price": 14600,
-          "transferPrice": 13870,
+          "price": 14680,
+          "transferPrice": 13950,
           "inStock": false
         }
       ],
@@ -724,8 +724,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 59530,
-          "transferPrice": 56550,
+          "price": 47880,
+          "transferPrice": 45490,
           "inStock": false
         }
       ],
@@ -745,8 +745,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 19240,
-          "transferPrice": 18280,
+          "price": 19340,
+          "transferPrice": 18370,
           "inStock": false
         }
       ],
@@ -766,8 +766,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 32060,
-          "transferPrice": 30460,
+          "price": 29010,
+          "transferPrice": 27560,
           "inStock": false
         }
       ],
@@ -793,22 +793,22 @@
         {
           "id": "fruit-punch",
           "name": "Fruit Punch",
-          "price": 30950,
-          "transferPrice": 29400,
+          "price": 31120,
+          "transferPrice": 29560,
           "inStock": false
         },
         {
           "id": "green-lemonade",
           "name": "Green Lemonade",
-          "price": 30950,
-          "transferPrice": 29400,
+          "price": 31120,
+          "transferPrice": 29560,
           "inStock": false
         },
         {
           "id": "strawberry-lime",
           "name": "Strawberry-Lime",
-          "price": 30950,
-          "transferPrice": 29400,
+          "price": 31120,
+          "transferPrice": 29560,
           "inStock": false
         }
       ],
@@ -831,29 +831,29 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 53580,
-          "transferPrice": 50900,
+          "price": 67340,
+          "transferPrice": 63970,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 53580,
-          "transferPrice": 50900,
+          "price": 67340,
+          "transferPrice": 63970,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 53580,
-          "transferPrice": 50900,
+          "price": 67340,
+          "transferPrice": 63970,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 53580,
-          "transferPrice": 50900,
+          "price": 67340,
+          "transferPrice": 63970,
           "inStock": false
         }
       ],
@@ -877,29 +877,29 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 145910,
-          "transferPrice": 138610,
+          "price": 183380,
+          "transferPrice": 174210,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 145910,
-          "transferPrice": 138610,
+          "price": 183380,
+          "transferPrice": 174210,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 145910,
-          "transferPrice": 138610,
+          "price": 183380,
+          "transferPrice": 174210,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 145910,
-          "transferPrice": 138610,
+          "price": 183380,
+          "transferPrice": 174210,
           "inStock": false
         }
       ],
@@ -921,8 +921,8 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 86960,
-          "transferPrice": 82610,
+          "price": 109290,
+          "transferPrice": 103830,
           "inStock": false
         }
       ],
@@ -943,8 +943,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 34360,
-          "transferPrice": 32640,
+          "price": 34540,
+          "transferPrice": 32810,
           "inStock": false
         }
       ],
@@ -965,15 +965,15 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 123120,
-          "transferPrice": 116960,
+          "price": 146990,
+          "transferPrice": 139640,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 123120,
-          "transferPrice": 116960,
+          "price": 146990,
+          "transferPrice": 139640,
           "inStock": false
         }
       ],
@@ -998,36 +998,36 @@
         {
           "id": "banana",
           "name": "Banana",
-          "price": 84700,
-          "transferPrice": 80470,
+          "price": 106450,
+          "transferPrice": 101130,
           "inStock": false
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 84700,
-          "transferPrice": 80470,
+          "price": 106450,
+          "transferPrice": 101130,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 84700,
-          "transferPrice": 80470,
+          "price": 106450,
+          "transferPrice": 101130,
           "inStock": true
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 84700,
-          "transferPrice": 80470,
+          "price": 106450,
+          "transferPrice": 101130,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 84700,
-          "transferPrice": 80470,
+          "price": 106450,
+          "transferPrice": 101130,
           "inStock": true
         }
       ],
@@ -1051,36 +1051,36 @@
         {
           "id": "banana",
           "name": "Banana",
-          "price": 248720,
-          "transferPrice": 236280,
+          "price": 312580,
+          "transferPrice": 296950,
           "inStock": false
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 248720,
-          "transferPrice": 236280,
+          "price": 312580,
+          "transferPrice": 296950,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 248720,
-          "transferPrice": 236280,
+          "price": 312580,
+          "transferPrice": 296950,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 248720,
-          "transferPrice": 236280,
+          "price": 312580,
+          "transferPrice": 296950,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 248720,
-          "transferPrice": 236280,
+          "price": 312580,
+          "transferPrice": 296950,
           "inStock": false
         }
       ],
@@ -1101,15 +1101,15 @@
         {
           "id": "lemonade",
           "name": "Lemonade",
-          "price": 40060,
-          "transferPrice": 38060,
+          "price": 40280,
+          "transferPrice": 38270,
           "inStock": false
         },
         {
           "id": "strawberry-lime",
           "name": "Strawberry-Lime",
-          "price": 40060,
-          "transferPrice": 38060,
+          "price": 40280,
+          "transferPrice": 38270,
           "inStock": false
         }
       ],
@@ -1132,29 +1132,29 @@
         {
           "id": "acai-power",
           "name": "Acaí Power",
-          "price": 33590,
-          "transferPrice": 31910,
+          "price": 33770,
+          "transferPrice": 32080,
           "inStock": false
         },
         {
           "id": "grape-attack",
           "name": "Grape Attack",
-          "price": 33590,
-          "transferPrice": 31910,
+          "price": 33770,
+          "transferPrice": 32080,
           "inStock": false
         },
         {
           "id": "lima-limon",
           "name": "Lima Limón",
-          "price": 33590,
-          "transferPrice": 31910,
+          "price": 33770,
+          "transferPrice": 32080,
           "inStock": false
         },
         {
           "id": "watermelon",
           "name": "Watermelon",
-          "price": 33590,
-          "transferPrice": 31910,
+          "price": 33770,
+          "transferPrice": 32080,
           "inStock": false
         }
       ],
@@ -1174,8 +1174,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 21630,
-          "transferPrice": 20550,
+          "price": 21750,
+          "transferPrice": 20660,
           "inStock": false
         }
       ],
@@ -1196,8 +1196,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 19910,
-          "transferPrice": 18910,
+          "price": 20010,
+          "transferPrice": 19010,
           "inStock": false
         }
       ],
@@ -1217,8 +1217,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 22010,
-          "transferPrice": 20910,
+          "price": 22130,
+          "transferPrice": 21020,
           "inStock": false
         }
       ],
@@ -1242,29 +1242,29 @@
         {
           "id": "acai-power",
           "name": "Acaí Power",
-          "price": 25220,
-          "transferPrice": 23960,
+          "price": 25350,
+          "transferPrice": 24080,
           "inStock": false
         },
         {
           "id": "blue-raz",
           "name": "Blue Raz",
-          "price": 25220,
-          "transferPrice": 23960,
+          "price": 25350,
+          "transferPrice": 24080,
           "inStock": false
         },
         {
           "id": "citrus-slush",
           "name": "Citrus Slush",
-          "price": 25220,
-          "transferPrice": 23960,
+          "price": 25350,
+          "transferPrice": 24080,
           "inStock": false
         },
         {
           "id": "grape-attack",
           "name": "Grape Attack",
-          "price": 25220,
-          "transferPrice": 23960,
+          "price": 25350,
+          "transferPrice": 24080,
           "inStock": false
         }
       ],
@@ -1284,8 +1284,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 8280,
-          "transferPrice": 7870,
+          "price": 8320,
+          "transferPrice": 7900,
           "inStock": false
         }
       ],
@@ -1305,8 +1305,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 23340,
-          "transferPrice": 22170,
+          "price": 23470,
+          "transferPrice": 22300,
           "inStock": false
         }
       ],
@@ -1331,43 +1331,43 @@
         {
           "id": "banana",
           "name": "Banana",
-          "price": 78890,
-          "transferPrice": 74950,
+          "price": 99150,
+          "transferPrice": 94190,
           "inStock": false
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
-          "price": 78890,
-          "transferPrice": 74950,
+          "price": 99150,
+          "transferPrice": 94190,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
-          "price": 78890,
-          "transferPrice": 74950,
+          "price": 99150,
+          "transferPrice": 94190,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
-          "price": 78890,
-          "transferPrice": 74950,
+          "price": 99150,
+          "transferPrice": 94190,
           "inStock": false
         },
         {
           "id": "pistacho",
           "name": "Pistacho",
-          "price": 78890,
-          "transferPrice": 74950,
+          "price": 99150,
+          "transferPrice": 94190,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
-          "price": 78890,
-          "transferPrice": 74950,
+          "price": 99150,
+          "transferPrice": 94190,
           "inStock": false
         }
       ],
@@ -1388,8 +1388,8 @@
         {
           "id": "unico",
           "name": "Único",
-          "price": 16450,
-          "transferPrice": 15630,
+          "price": 16540,
+          "transferPrice": 15710,
           "inStock": false
         }
       ],
