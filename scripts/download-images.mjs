@@ -12,6 +12,7 @@ import { access, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promise
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { matteWhite } from "./matte-white.mjs";
 
 const force = process.argv.includes("--force");
 const root = path.dirname(fileURLToPath(new URL(".", import.meta.url)));
@@ -62,7 +63,9 @@ async function fetchBuffer(url) {
 
 async function saveWebp(buffer, dest) {
   await mkdir(path.dirname(dest), { recursive: true });
-  await sharp(buffer).rotate().webp({ quality: 82 }).toFile(dest);
+  const rotated = await sharp(buffer).rotate().toBuffer();
+  const { buffer: matted } = await matteWhite(rotated);
+  await sharp(matted).webp({ quality: 82 }).toFile(dest);
 }
 
 async function loadManifest() {

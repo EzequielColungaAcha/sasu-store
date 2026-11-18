@@ -1,5 +1,6 @@
 /**
- * Builds the catalog from a workbook, refreshes wholesale costs, then downloads images.
+ * Builds the catalog from a workbook, refreshes wholesale costs, downloads images,
+ * then clears studio white from pack shots.
  *
  *   npm run catalog
  *   npm run catalog -- --file list.xlsx
@@ -29,6 +30,7 @@ try {
     ["build-catalog.mjs", ["--file", workbook.path]],
     ["update-prices.mjs", ["--file", workbook.path]],
     ["download-images.mjs", []],
+    ["matte-white.mjs", []],
   ];
   for (const [script, args] of steps) {
     await run(script, args);
