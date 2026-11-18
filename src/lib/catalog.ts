@@ -8,6 +8,7 @@ export type Variant = {
   price: number;
   transferPrice: number;
   inStock: boolean;
+  image?: string;
 };
 
 export type Product = {
@@ -118,6 +119,17 @@ export function consultMessage(productName: string, variantName?: string) {
   const flavor =
     variantName && variantName !== "Único" ? ` (${variantName})` : "";
   return `Hola, quiero consultar por ${productName}${flavor}`;
+}
+
+export function fold(value: string) {
+  return value.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+}
+
+export function searchText(product: Product) {
+  const flavors = product.variants
+    .map((variant) => variant.name)
+    .filter((name) => name !== "Único");
+  return fold([product.name, product.category, ...flavors].join(" "));
 }
 
 export function categoriesOf(products: Product[]) {

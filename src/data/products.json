@@ -124,12 +124,14 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
+          "image": "/images/products/citrato-de-magnesio-polvo-sinsabor-210-gr/02.webp",
           "cost": 9885,
           "inStock": false
         },
         {
           "id": "sin-sabor",
           "name": "Sin sabor",
+          "image": "/images/products/citrato-de-magnesio-polvo-sinsabor-210-gr/01.webp",
           "cost": 9885,
           "inStock": false
         }
@@ -152,12 +154,14 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
+          "image": "/images/products/citrato-de-magnesio-polvo-500-gr/02.webp",
           "cost": 21969,
           "inStock": false
         },
         {
           "id": "sin-sabor",
           "name": "Sin sabor",
+          "image": "/images/products/citrato-de-magnesio-polvo-500-gr/01.webp",
           "cost": 21969,
           "inStock": false
         }
@@ -202,12 +206,14 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
+          "image": "/images/products/collagen210gr/02.webp",
           "cost": 13386,
           "inStock": false
         },
         {
           "id": "limon",
           "name": "Limón",
+          "image": "/images/products/collagen210gr/01.webp",
           "cost": 13386,
           "inStock": false
         }
@@ -271,12 +277,14 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/collagen-whey-protein/01.webp",
           "cost": 52632,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/collagen-whey-protein/02.webp",
           "cost": 52632,
           "inStock": false
         }
@@ -341,18 +349,21 @@
         {
           "id": "frutos-rojos",
           "name": "Frutos Rojos",
+          "image": "/images/products/creatina-monohidrato-300g-doypack-saborizada/03.webp",
           "cost": 18294,
           "inStock": true
         },
         {
           "id": "grape",
           "name": "Grape",
+          "image": "/images/products/creatina-monohidrato-300g-doypack-saborizada/02.webp",
           "cost": 18295,
           "inStock": false
         },
         {
           "id": "limon",
           "name": "Limón",
+          "image": "/images/products/creatina-monohidrato-300g-doypack-saborizada/01.webp",
           "cost": 18295,
           "inStock": false
         }
@@ -436,12 +447,14 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/creatine-wheyprotein910/01.webp",
           "cost": 60890,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/creatine-wheyprotein910/02.webp",
           "cost": 60890,
           "inStock": false
         }
@@ -509,12 +522,14 @@
         {
           "id": "blue-raz",
           "name": "Blue Raz",
+          "image": "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/03.webp",
           "cost": 12828,
           "inStock": false
         },
         {
           "id": "lima-limon",
           "name": "Lima Limón",
+          "image": "/images/products/hydroplus-sport-drink-x-700-grs-lima-limon-endurance/01.webp",
           "cost": 12828,
           "inStock": false
         }
@@ -668,6 +683,7 @@
         {
           "id": "naranja",
           "name": "Naranja",
+          "image": "/images/products/l-carnitine-liquida-500/01.webp",
           "cost": 10199,
           "inStock": false
         }
@@ -751,18 +767,21 @@
         {
           "id": "fruit-punch",
           "name": "Fruit Punch",
+          "image": "/images/products/mtor-bcaa-270g/01.webp",
           "cost": 21628,
           "inStock": false
         },
         {
           "id": "green-lemonade",
           "name": "Green Lemonade",
+          "image": "/images/products/mtor-bcaa-270g/03.webp",
           "cost": 21628,
           "inStock": false
         },
         {
           "id": "strawberry-lime",
           "name": "Strawberry-Lime",
+          "image": "/images/products/mtor-bcaa-270g/02.webp",
           "cost": 21628,
           "inStock": false
         }
@@ -786,24 +805,28 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/mutant-mass-1-5kg/04.webp",
           "cost": 46801,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
+          "image": "/images/products/mutant-mass-1-5kg/01.webp",
           "cost": 46801,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
+          "image": "/images/products/mutant-mass-1-5kg/03.webp",
           "cost": 46801,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/mutant-mass-1-5kg/02.webp",
           "cost": 46801,
           "inStock": false
         }
@@ -828,24 +851,28 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/mutant-mass-5kg/01.webp",
           "cost": 127448,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
+          "image": "/images/products/mutant-mass-5kg/05.webp",
           "cost": 127448,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
+          "image": "/images/products/mutant-mass-5kg/02.webp",
           "cost": 127448,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/mutant-mass-5kg/03.webp",
           "cost": 127448,
           "inStock": false
         }
@@ -866,6 +893,7 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/nitro-whey-chocolate-x-2-lb/01.webp",
           "cost": 75955,
           "inStock": false
         }
@@ -908,12 +936,14 @@
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/premium-whey-isolate-x-2-lbs/02.webp",
           "cost": 102157,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/premium-whey-isolate-x-2-lbs/01.webp",
           "cost": 102157,
           "inStock": false
         }
@@ -939,30 +969,35 @@
         {
           "id": "banana",
           "name": "Banana",
+          "image": "/images/products/platinum-whey-protein-chocolate-x-2-lbs/04.webp",
           "cost": 73983,
           "inStock": false
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/platinum-whey-protein-chocolate-x-2-lbs/02.webp",
           "cost": 73983,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
+          "image": "/images/products/platinum-whey-protein-chocolate-x-2-lbs/01.webp",
           "cost": 73983,
           "inStock": true
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
+          "image": "/images/products/platinum-whey-protein-chocolate-x-2-lbs/05.webp",
           "cost": 73983,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/platinum-whey-protein-chocolate-x-2-lbs/03.webp",
           "cost": 73983,
           "inStock": true
         }
@@ -987,30 +1022,35 @@
         {
           "id": "banana",
           "name": "Banana",
+          "image": "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/05.webp",
           "cost": 217239,
           "inStock": false
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/04.webp",
           "cost": 217239,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
+          "image": "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/02.webp",
           "cost": 217239,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
+          "image": "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/01.webp",
           "cost": 217239,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/premium-whey-protein-vainilla-x-3-kilos-zipper-pack/03.webp",
           "cost": 217239,
           "inStock": false
         }
@@ -1032,12 +1072,14 @@
         {
           "id": "lemonade",
           "name": "Lemonade",
+          "image": "/images/products/pump-3d-ripped-315-gr/01.webp",
           "cost": 27991,
           "inStock": false
         },
         {
           "id": "strawberry-lime",
           "name": "Strawberry-Lime",
+          "image": "/images/products/pump-3d-ripped-315-gr/02.webp",
           "cost": 27991,
           "inStock": false
         }
@@ -1061,24 +1103,28 @@
         {
           "id": "acai-power",
           "name": "Acaí Power",
+          "image": "/images/products/pump-v8-285-gr/01.webp",
           "cost": 23472,
           "inStock": false
         },
         {
           "id": "grape-attack",
           "name": "Grape Attack",
+          "image": "/images/products/pump-v8-285-gr/03.webp",
           "cost": 23472,
           "inStock": false
         },
         {
           "id": "lima-limon",
           "name": "Lima Limón",
+          "image": "/images/products/pump-v8-285-gr/02.webp",
           "cost": 23472,
           "inStock": false
         },
         {
           "id": "watermelon",
           "name": "Watermelon",
+          "image": "/images/products/pump-v8-285-gr/04.webp",
           "cost": 23472,
           "inStock": false
         }
@@ -1164,24 +1210,28 @@
         {
           "id": "acai-power",
           "name": "Acaí Power",
+          "image": "/images/products/tnt-dynamite-240grs/01.webp",
           "cost": 17621,
           "inStock": false
         },
         {
           "id": "blue-raz",
           "name": "Blue Raz",
+          "image": "/images/products/tnt-dynamite-240grs/03.webp",
           "cost": 17621,
           "inStock": false
         },
         {
           "id": "citrus-slush",
           "name": "Citrus Slush",
+          "image": "/images/products/tnt-dynamite-240grs/04.webp",
           "cost": 17621,
           "inStock": false
         },
         {
           "id": "grape-attack",
           "name": "Grape Attack",
+          "image": "/images/products/tnt-dynamite-240grs/02.webp",
           "cost": 17621,
           "inStock": false
         }
@@ -1248,42 +1298,49 @@
         {
           "id": "banana",
           "name": "Banana",
+          "image": "/images/products/whey-protein-2lb-doypack/07.webp",
           "cost": 68910,
           "inStock": false
         },
         {
           "id": "chocolate",
           "name": "Chocolate",
+          "image": "/images/products/whey-protein-2lb-doypack/06.webp",
           "cost": 68910,
           "inStock": false
         },
         {
           "id": "cookies-cream",
           "name": "Cookies & Cream",
+          "image": "/images/products/whey-protein-2lb-doypack/05.webp",
           "cost": 68910,
           "inStock": false
         },
         {
           "id": "frutilla",
           "name": "Frutilla",
+          "image": "/images/products/whey-protein-2lb-doypack/04.webp",
           "cost": 68910,
           "inStock": false
         },
         {
           "id": "mango",
           "name": "Mango",
+          "image": "/images/products/whey-protein-2lb-doypack/01.webp",
           "cost": 68910,
           "inStock": false
         },
         {
           "id": "pistacho",
           "name": "Pistacho",
+          "image": "/images/products/whey-protein-2lb-doypack/02.webp",
           "cost": 68910,
           "inStock": false
         },
         {
           "id": "vainilla",
           "name": "Vainilla",
+          "image": "/images/products/whey-protein-2lb-doypack/03.webp",
           "cost": 68910,
           "inStock": false
         }

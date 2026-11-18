@@ -12,6 +12,16 @@ const { products, categories } = Astro.props;
 
 <div class="space-y-8" data-catalog>
   <div class="grid gap-4 sm:grid-cols-2 sm:max-w-xl">
+    <label class="grid gap-2 text-xs font-bold uppercase tracking-[0.16em] text-fog sm:col-span-2">
+      Buscar
+      <input
+        type="search"
+        data-filter="q"
+        placeholder="Nombre o sabor"
+        class="filter-input"
+        autocomplete="off"
+      />
+    </label>
     <label class="grid gap-2 text-xs font-bold uppercase tracking-[0.16em] text-fog">
       Categoría
       <select
@@ -67,9 +77,34 @@ const { products, categories } = Astro.props;
     border-color: var(--color-acid);
     outline: none;
   }
+  .filter-input {
+    width: 100%;
+    border-radius: 0.9rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-panel);
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--color-paper);
+  }
+  .filter-input::placeholder {
+    color: var(--color-fog);
+    font-weight: 500;
+  }
+  .filter-input:hover,
+  .filter-input:focus {
+    border-color: var(--color-acid);
+    outline: none;
+  }
 </style>
 
 <script>
+  import { fold } from "../lib/catalog";
+
+  const FILTERS_KEY = "sasu-catalog-filters";
+
   function setupCatalog(root: Element) {
     const el = root as HTMLElement;
     if (el.dataset.ready === "1") return;
@@ -78,28 +113,71 @@ const { products, categories } = Astro.props;
     const empty = root.querySelector<HTMLElement>("[data-empty]");
     const count = root.querySelector<HTMLElement>("[data-count]");
     const grid = cards[0]?.parentElement;
+    const queryInput = root.querySelector<HTMLInputElement>('[data-filter="q"]');
     const categoriaSelect = root.querySelector<HTMLSelectElement>('[data-filter="categoria"]');
     const stockSelect = root.querySelector<HTMLSelectElement>('[data-filter="stock"]');
 
+    const restore = () => {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(FILTERS_KEY) || "null") as {
+          q?: string;
+          categoria?: string;
+          stock?: string;
+        } | null;
+        if (!saved) return;
+        if (queryInput && typeof saved.q === "string") queryInput.value = saved.q;
+        if (
+          categoriaSelect &&
+          saved.categoria &&
+          [...categoriaSelect.options].some((option) => option.value === saved.categoria)
+        ) {
+          categoriaSelect.value = saved.categoria;
+        }
+        if (stockSelect && (saved.stock === "todas" || saved.stock === "si" || saved.stock === "no")) {
+          stockSelect.value = saved.stock;
+        }
+      } catch {
+        sessionStorage.removeItem(FILTERS_KEY);
+      }
+    };
+
+    const save = () => {
+      sessionStorage.setItem(
+        FILTERS_KEY,
+        JSON.stringify({
+          q: queryInput?.value ?? "",
+          categoria: categoriaSelect?.value ?? "todas",
+          stock: stockSelect?.value ?? "todas",
+        }),
+      );
+    };
+
     const apply = () => {
+      const words = fold(queryInput?.value ?? "")
+        .split(/\s+/)
+        .filter(Boolean);
       const categoria = categoriaSelect?.value ?? "todas";
       const stock = stockSelect?.value ?? "todas";
       let visible = 0;
       for (const card of cards) {
+        const text = card.dataset.search ?? "";
+        const textOk = words.every((word) => text.includes(word));
         const catOk = categoria === "todas" || card.dataset.category === categoria;
         const stockOk = stock === "todas" || card.dataset.stock === stock;
-        const show = catOk && stockOk;
+        const show = textOk && catOk && stockOk;
         card.classList.toggle("hidden", !show);
         if (show) visible += 1;
       }
       empty?.classList.toggle("hidden", visible !== 0);
       grid?.classList.toggle("hidden", visible === 0);
       if (count) {
-        count.textContent =
-          visible === 1 ? "1 producto" : `${visible} productos`;
+        count.textContent = visible === 1 ? "1 producto" : `${visible} productos`;
       }
+      save();
     };
 
+    restore();
+    queryInput?.addEventListener("input", apply);
     categoriaSelect?.addEventListener("change", apply);
     stockSelect?.addEventListener("change", apply);
     apply();

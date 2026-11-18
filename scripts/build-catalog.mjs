@@ -13,6 +13,7 @@ import { join } from "node:path";
 import {
   ROOT,
   detectFlavor,
+  normalize,
   pickShopifyProduct,
   prettyFlavor,
   readListRows,
@@ -66,6 +67,15 @@ function shopifyImages(product) {
     urls.unshift(product.image.src);
   }
   return urls;
+}
+
+function shopifyVariantImage(shopifyProduct, flavor) {
+  const wanted = normalize(prettyFlavor(flavor));
+  const variant = (shopifyProduct.variants || []).find((item) => {
+    const option = item.option1 || item.title || "";
+    return normalize(prettyFlavor(option)) === wanted || normalize(option) === wanted;
+  });
+  return variant?.featured_image?.src || "";
 }
 
 function titleCase(s) {
@@ -190,16 +200,19 @@ async function main() {
     }
     const item = grouped.get(key);
     const vid = variantId(flavor);
+    const image = shopifyVariantImage(product, flavor);
     const existing = item.variants.find((v) => v.id === vid);
     if (!existing) {
       item.variants.push({
         id: vid,
         name: flavor,
+        ...(image ? { image } : {}),
         cost: row.unit,
         inStock: carriedStock(stock, item.id, vid),
       });
     } else {
       existing.cost = row.unit;
+      if (image) existing.image = image;
     }
   }
 

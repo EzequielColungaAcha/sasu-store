@@ -43,7 +43,7 @@ const inStockCount = products.filter(hasStock).length;
       <div class="grid grid-cols-1 gap-4">
         <div class="rounded-3xl border border-acid/40 bg-raised p-5">
           <p class="text-xs uppercase tracking-[0.16em] text-acid">Envíos</p>
-          <p class="mt-2 font-display text-4xl tracking-wide">A toda la zona</p>
+          <p class="mt-2 font-display text-4xl tracking-wide">A toda la zona - 📍Pila</p>
         </div>
         <div class="rounded-3xl border border-acid/40 bg-raised p-5">
           <p class="text-xs uppercase tracking-[0.16em] text-acid">Productos Sin Stock</p>
@@ -66,7 +66,7 @@ const inStockCount = products.filter(hasStock).length;
     <div class="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
       <div>
         <h2 class="font-display text-5xl tracking-[0.12em]">Productos</h2>
-        <p class="mt-2 text-fog">Filtrá por categoría o disponibilidad. El stock se muestra como con stock o sin stock.</p>
+        <p class="mt-2 text-fog">Buscá por nombre o sabor, y filtrá por categoría o disponibilidad. El stock se muestra como con stock o sin stock.</p>
       </div>
     </div>
     <ProductGrid products={products} categories={categories} />

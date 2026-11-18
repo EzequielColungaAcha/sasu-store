@@ -27,6 +27,14 @@ function pad(n) {
   return String(n).padStart(2, "0");
 }
 
+function imageKey(url) {
+  try {
+    return new URL(url).pathname;
+  } catch {
+    return url;
+  }
+}
+
 function downloadUrl(url) {
   try {
     const u = new URL(url);
@@ -87,18 +95,27 @@ async function main() {
   let downloaded = 0;
   let skipped = 0;
   let failed = 0;
+  const localByKey = new Map();
+
+  const remember = (src, dest) => {
+    localByKey.set(src, dest);
+    localByKey.set(imageKey(src), dest);
+  };
 
   await mapLimit(jobs, 8, async (job) => {
     const { src, destRel, destAbs, product, index } = job;
 
     if (!src.startsWith("http")) {
-      product.images[index] = src.startsWith("/") ? src : destRel;
+      const local = src.startsWith("/") ? src : destRel;
+      product.images[index] = local;
+      remember(src, local);
       skipped += 1;
       return;
     }
 
     if (!force && (await exists(destAbs))) {
       product.images[index] = destRel;
+      remember(src, destRel);
       skipped += 1;
       return;
     }
@@ -107,6 +124,7 @@ async function main() {
       const buf = await fetchBuffer(src);
       await saveWebp(buf, destAbs);
       product.images[index] = destRel;
+      remember(src, destRel);
       downloaded += 1;
       process.stdout.write(".");
     } catch (err) {
@@ -114,6 +132,14 @@ async function main() {
       console.error(`\n${product.name}: ${err.message}`);
     }
   });
+
+  for (const product of catalog.products) {
+    for (const variant of product.variants || []) {
+      if (!variant.image) continue;
+      const local = localByKey.get(variant.image) || localByKey.get(imageKey(variant.image));
+      if (local) variant.image = local;
+    }
+  }
 
   if (catalog.source) delete catalog.source.brand;
 

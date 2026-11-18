@@ -33,7 +33,7 @@ const initial = featuredVariant(product);
 const flavors = visibleFlavors(product);
 const showFlavors = flavors.length > 1 || flavors[0]?.name !== "Único";
 const images = product.images.length ? product.images : ["/placeholder.svg"];
-const hero = images[0];
+const hero = initial.image || images[0];
 const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name));
 ---
 
@@ -62,7 +62,7 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
                 type="button"
                 class:list={[
                   "overflow-hidden rounded-2xl border bg-raised p-2",
-                  i === 0 ? "border-acid" : "border-line",
+                  src === hero ? "border-acid" : "border-line",
                 ]}
                 data-src={src}
                 aria-label={`Ver imagen ${i + 1}`}
@@ -175,6 +175,22 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
       }
     };
 
+    const thumbs = document.querySelectorAll<HTMLButtonElement>("[data-thumbs] [data-src]");
+    const hero = document.querySelector<HTMLImageElement>("#foto-principal");
+
+    const showImage = (src: string) => {
+      if (!hero || !src) return;
+      hero.src = imageSrc(src, 1080);
+      const set = srcSet(src, [480, 720, 1080, 1400]);
+      if (set) hero.srcset = set;
+      else hero.removeAttribute("srcset");
+      thumbs.forEach((thumb) => {
+        const on = thumb.dataset.src === src;
+        thumb.classList.toggle("border-acid", on);
+        thumb.classList.toggle("border-line", !on);
+      });
+    };
+
     const paint = (variant: Variant) => {
       const stock = root.querySelector("[data-stock]");
       if (stock) {
@@ -189,6 +205,7 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
       if (list) list.textContent = `Precio de lista ${formatARS(variant.price)}`;
       const wa = document.querySelector<HTMLAnchorElement>("[data-wa]");
       if (wa) wa.href = whatsappHref(phone, consultMessage(productName, variant.name));
+      if (variant.image) showImage(variant.image);
     };
 
     const variantButtons = root.querySelectorAll<HTMLButtonElement>("[data-variant]");
@@ -200,18 +217,11 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
       });
     });
 
-    const thumbs = document.querySelectorAll<HTMLButtonElement>("[data-thumbs] [data-src]");
-    const hero = document.querySelector<HTMLImageElement>("#foto-principal");
     thumbs.forEach((btn) => {
       btn.addEventListener("click", () => {
         const src = btn.dataset.src;
-        if (!hero || !src) return;
-        hero.src = imageSrc(src, 1080);
-        hero.srcset = srcSet(src, [480, 720, 1080, 1400]) ?? "";
-        thumbs.forEach((thumb) => {
-          thumb.classList.toggle("border-acid", thumb === btn);
-          thumb.classList.toggle("border-line", thumb !== btn);
-        });
+        if (!src) return;
+        showImage(src);
       });
     });
   });

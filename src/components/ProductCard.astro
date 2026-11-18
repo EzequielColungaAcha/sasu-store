@@ -1,6 +1,6 @@
 ---
 import type { Product } from "../lib/catalog";
-import { featuredVariant, hasStock, imageSrc, srcSet, transitionName, visibleFlavors } from "../lib/catalog";
+import { featuredVariant, hasStock, imageSrc, searchText, srcSet, transitionName, visibleFlavors } from "../lib/catalog";
 import PriceBlock from "./PriceBlock.astro";
 import StockBadge from "./StockBadge.astro";
 
@@ -26,6 +26,7 @@ const flavorNote =
   class="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-panel transition hover:border-acid/50 hover:shadow-[0_0_0_1px_rgba(214,255,60,0.25)]"
   data-category={product.category}
   data-stock={stock ? "si" : "no"}
+  data-search={searchText(product)}
 >
   <a href={`/productos/${product.slug}`} class="flex flex-1 flex-col">
     <div class="relative aspect-square overflow-hidden bg-raised">
