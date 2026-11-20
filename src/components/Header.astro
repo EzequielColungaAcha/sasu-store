@@ -11,41 +11,60 @@ const consult = whatsappHref(
 <header
   class="sticky top-0 z-40 border-b border-line/80 bg-ink/85 backdrop-blur-md"
 >
-  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-    <a href="/" class="flex items-center gap-3" aria-label={`${site.name} | ${site.tagline}`}>
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6">
+    <a href="/" class="flex min-w-0 items-center gap-2 sm:gap-3" aria-label={`${site.name} | ${site.tagline}`}>
       <img
         src={site.logo}
         alt=""
         width="56"
         height="56"
-        class="h-11 w-11 rounded-xl object-contain sm:h-12 sm:w-12"
+        class="h-9 w-9 shrink-0 rounded-xl object-contain sm:h-12 sm:w-12"
       />
-      <span class="leading-tight">
-        <span class="block font-display text-3xl tracking-[0.14em] text-acid">{site.name}</span>
+      <span class="min-w-0 leading-tight">
+        <span class="block font-display text-2xl tracking-[0.08em] text-acid sm:text-3xl sm:tracking-[0.14em]">{site.name}</span>
         <span class="hidden text-[11px] font-semibold uppercase tracking-[0.16em] text-fog sm:block">
           {site.tagline}
         </span>
       </span>
     </a>
-    <nav class="flex items-center gap-2 text-sm font-semibold sm:gap-4">
-      <a href="/#catalogo" class="rounded-full px-3 py-2 text-paper/90 hover:bg-raised hover:text-acid">
-        Productos
+    <nav class="flex shrink-0 items-center gap-1 text-sm font-semibold sm:gap-4">
+      <a
+        href="/#catalogo"
+        class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-paper/90 hover:bg-raised hover:text-acid sm:h-auto sm:w-auto sm:px-3 sm:py-2"
+      >
+        <svg viewBox="0 0 24 24" class="h-5 w-5 sm:hidden" aria-hidden="true">
+          <path fill="currentColor" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"></path>
+        </svg>
+        <span class="sr-only sm:not-sr-only">Productos</span>
       </a>
-      <a href="/pedido" class="rounded-full px-3 py-2 text-paper/90 hover:bg-raised hover:text-acid">
-        Pedido
+      <a
+        href="/pedido"
+        class="relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-paper/90 hover:bg-raised hover:text-acid sm:h-auto sm:w-auto sm:px-3 sm:py-2"
+      >
+        <svg viewBox="0 0 24 24" class="h-5 w-5 sm:hidden" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.5 8h11l-1 12h-9l-1-12z"></path>
+          <path stroke-linecap="round" d="M9 8V7a3 3 0 0 1 6 0v1"></path>
+        </svg>
+        <span class="sr-only sm:not-sr-only">Pedido</span>
         <span
           data-order-count
           hidden
-          class="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-acid px-1.5 text-xs font-extrabold text-ink"
+          class="absolute -top-1 -right-1 inline-flex min-w-5 items-center justify-center rounded-full bg-acid px-1.5 text-xs font-extrabold text-ink sm:static sm:top-auto sm:right-auto sm:ml-1"
         ></span>
       </a>
       <a
         href={consult}
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded-full bg-acid px-3 py-2 text-ink hover:bg-paper"
+        class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-acid text-ink hover:bg-paper sm:h-auto sm:w-auto sm:px-3 sm:py-2"
       >
-        WhatsApp
+        <svg viewBox="0 0 24 24" class="h-5 w-5 sm:hidden" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.41a10.1 10.1 0 0 0 4.65 1.14h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 13.85c-.24.68-1.4 1.25-1.94 1.33-.5.07-1.13.1-1.82-.11-.42-.14-.96-.31-1.66-.61-2.92-1.26-4.82-4.2-4.97-4.4-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.29.58-.36.77-.36h.55c.18 0 .41-.07.64.49.24.58.81 2 .88 2.15.07.14.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.56.16.27.7 1.16 1.5 1.88 1.03.92 1.9 1.2 2.17 1.34.27.14.42.12.58-.07.16-.19.66-.77.84-1.03.18-.27.35-.22.58-.13.24.09 1.5.71 1.76.84.26.13.43.19.49.3.07.1.07.61-.17 1.29z"
+          ></path>
+        </svg>
+        <span class="sr-only sm:not-sr-only">WhatsApp</span>
       </a>
     </nav>
   </div>

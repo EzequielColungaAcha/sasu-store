@@ -93,15 +93,6 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
         {product.brand ? ` · ${product.brand}` : ""}
       </p>
       <h1 class="mt-3 font-display text-5xl tracking-[0.08em] sm:text-6xl">{product.name}</h1>
-      <div class="mt-4">
-        <button
-          type="button"
-          data-share
-          class="rounded-full border border-line px-3 py-2 text-sm font-semibold text-paper hover:border-acid"
-        >
-          Compartir
-        </button>
-      </div>
       <div class="mt-4" data-stock>
         <StockBadge inStock={initial.inStock} />
       </div>
@@ -141,15 +132,31 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
         </p>
       </div>
 
-      <div class="mt-6 flex flex-col gap-3">
-        <button
-          type="button"
-          data-add
-          class="inline-flex w-full items-center justify-center rounded-full border border-acid px-5 py-3 text-sm font-extrabold uppercase tracking-[0.12em] text-acid transition hover:bg-acid hover:text-ink"
-        >
-          Agregar al pedido
-        </button>
-        <WhatsAppButton href={wa} />
+      <div class="mt-6">
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <button
+            type="button"
+            data-share
+            class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-line px-5 py-3 text-sm font-extrabold uppercase tracking-[0.12em] text-paper transition hover:border-acid sm:w-auto"
+          >
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="m7 8 5-5 5 5"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"></path>
+            </svg>
+            <span data-share-label>Compartir</span>
+          </button>
+          <button
+            type="button"
+            data-add
+            class="inline-flex w-full items-center justify-center rounded-full border border-acid px-5 py-3 text-sm font-extrabold uppercase tracking-[0.12em] text-acid transition hover:bg-acid hover:text-ink sm:flex-1"
+          >
+            Agregar al pedido
+          </button>
+          <div class="w-full sm:flex-1">
+            <WhatsAppButton href={wa} />
+          </div>
+        </div>
         <p class="mt-3 text-xs text-fog">
           Te respondemos por WhatsApp para coordinar el pago y la entrega.
         </p>
@@ -266,10 +273,11 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
       }
       try {
         await navigator.clipboard.writeText(payload.url);
-        if (!share) return;
-        share.textContent = "Enlace copiado";
+        const label = share?.querySelector<HTMLElement>("[data-share-label]");
+        if (!label) return;
+        label.textContent = "Enlace copiado";
         window.setTimeout(() => {
-          share.textContent = "Compartir";
+          label.textContent = "Compartir";
         }, 1600);
       } catch {
         /* The button stays available if the browser blocks the clipboard. */
