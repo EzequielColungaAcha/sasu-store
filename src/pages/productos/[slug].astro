@@ -81,12 +81,27 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
       }
     </div>
 
-    <div data-detail data-name={product.name} data-phone={site.whatsapp}>
+    <div
+      data-detail
+      data-product-id={product.id}
+      data-name={product.name}
+      data-phone={site.whatsapp}
+      data-initial={JSON.stringify(initial)}
+    >
       <p class="text-xs font-bold uppercase tracking-[0.22em] text-acid">
         {product.category}
         {product.brand ? ` · ${product.brand}` : ""}
       </p>
       <h1 class="mt-3 font-display text-5xl tracking-[0.08em] sm:text-6xl">{product.name}</h1>
+      <div class="mt-4">
+        <button
+          type="button"
+          data-share
+          class="rounded-full border border-line px-3 py-2 text-sm font-semibold text-paper hover:border-acid"
+        >
+          Compartir
+        </button>
+      </div>
       <div class="mt-4" data-stock>
         <StockBadge inStock={initial.inStock} />
       </div>
@@ -126,7 +141,14 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
         </p>
       </div>
 
-      <div class="mt-6">
+      <div class="mt-6 flex flex-col gap-3">
+        <button
+          type="button"
+          data-add
+          class="inline-flex w-full items-center justify-center rounded-full border border-acid px-5 py-3 text-sm font-extrabold uppercase tracking-[0.12em] text-acid transition hover:bg-acid hover:text-ink"
+        >
+          Agregar al pedido
+        </button>
         <WhatsAppButton href={wa} />
         <p class="mt-3 text-xs text-fog">
           Te respondemos por WhatsApp para coordinar el pago y la entrega.
@@ -146,6 +168,7 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
 </Layout>
 
 <script>
+  import { addToOrder } from "../../lib/cart";
   import {
     consultMessage,
     formatARS,
@@ -161,7 +184,9 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
     root.dataset.bound = "1";
 
     const productName = root.dataset.name ?? "";
+    const productId = root.dataset.productId ?? "";
     const phone = root.dataset.phone ?? "";
+    let current = JSON.parse(root.dataset.initial || "{}") as Variant;
 
     const setActive = (buttons: NodeListOf<HTMLButtonElement>, active: HTMLButtonElement) => {
       for (const btn of buttons) {
@@ -192,6 +217,7 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
     };
 
     const paint = (variant: Variant) => {
+      current = variant;
       const stock = root.querySelector("[data-stock]");
       if (stock) {
         const ok = variant.inStock;
@@ -223,6 +249,49 @@ const wa = whatsappHref(site.whatsapp, consultMessage(product.name, initial.name
         if (!src) return;
         showImage(src);
       });
+    });
+
+    const share = root.querySelector<HTMLButtonElement>("[data-share]");
+    share?.addEventListener("click", async () => {
+      const url = new URL(location.href);
+      url.hash = "";
+      const payload = { title: productName, url: url.toString() };
+      if (navigator.share) {
+        try {
+          await navigator.share(payload);
+          return;
+        } catch (err) {
+          if (err instanceof DOMException && err.name === "AbortError") return;
+        }
+      }
+      try {
+        await navigator.clipboard.writeText(payload.url);
+        if (!share) return;
+        share.textContent = "Enlace copiado";
+        window.setTimeout(() => {
+          share.textContent = "Compartir";
+        }, 1600);
+      } catch {
+        /* The button stays available if the browser blocks the clipboard. */
+      }
+    });
+
+    const add = root.querySelector<HTMLButtonElement>("[data-add]");
+    add?.addEventListener("click", () => {
+      if (!current?.id) return;
+      addToOrder({
+        productId,
+        name: productName,
+        flavorId: current.id,
+        flavorName: current.name,
+        price: current.price,
+        transferPrice: current.transferPrice,
+      });
+      if (!add) return;
+      add.textContent = "Agregado";
+      window.setTimeout(() => {
+        add.textContent = "Agregar al pedido";
+      }, 1400);
     });
   });
 </script>

@@ -1,0 +1,155 @@
+---
+import Layout from "../layouts/Layout.astro";
+import catalog from "../data/products.json";
+import site from "../data/site.json";
+import { imageSrc, type Product } from "../lib/catalog";
+
+const photos = Object.fromEntries(
+  (catalog.products as Product[]).map((product) => [
+    product.id,
+    {
+      image: product.images[0] ? imageSrc(product.images[0], 240) : "",
+      variants: Object.fromEntries(
+        product.variants.map((variant) => [
+          variant.id,
+          variant.image ? imageSrc(variant.image, 240) : "",
+        ]),
+      ),
+    },
+  ]),
+);
+---
+
+<Layout title="Pedido" description="Armá tu pedido y envialo por WhatsApp.">
+  <section class="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:py-14">
+    <a href="/#catalogo" class="text-sm font-semibold text-fog hover:text-acid">← Volver al catálogo</a>
+    <h1 class="mt-4 font-display text-6xl tracking-[0.08em]">Pedido</h1>
+    <div
+      class="mt-8"
+      data-order
+      data-phone={site.whatsapp}
+      data-photos={JSON.stringify(photos)}
+    >
+      <div data-order-body>
+        <div class="rounded-3xl border border-line bg-panel p-6">
+          <p class="text-lg font-semibold">Tu pedido está vacío.</p>
+          <a href="/#catalogo" class="mt-4 inline-flex font-semibold text-acid hover:text-paper">
+            Ver productos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { formatARS } from "../lib/catalog";
+  import {
+    orderHref,
+    orderTotals,
+    readOrder,
+    removeLine,
+    setQuantity,
+    type OrderLine,
+  } from "../lib/cart";
+
+  type PhotoMap = Record<string, { image?: string; variants: Record<string, string> }>;
+
+  function escapeHtml(value: string) {
+    return value
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function lineImage(photos: PhotoMap, line: OrderLine) {
+    const product = photos[line.productId];
+    return product?.variants?.[line.flavorId] || product?.image || "/placeholder.svg";
+  }
+
+  function flavorLabel(name: string) {
+    return name && name !== "Único" ? name : "";
+  }
+
+  function renderOrder() {
+    const root = document.querySelector<HTMLElement>("[data-order]");
+    const body = root?.querySelector<HTMLElement>("[data-order-body]");
+    if (!root || !body) return;
+    const photos = JSON.parse(root.dataset.photos || "{}") as PhotoMap;
+    const phone = root.dataset.phone ?? "";
+    const lines = readOrder();
+
+    if (!lines.length) {
+      body.innerHTML = `
+        <div class="rounded-3xl border border-line bg-panel p-6">
+          <p class="text-lg font-semibold">Tu pedido está vacío.</p>
+          <a href="/#catalogo" class="mt-4 inline-flex font-semibold text-acid hover:text-paper">Ver productos</a>
+        </div>`;
+      return;
+    }
+
+    const totals = orderTotals(lines);
+    const cards = lines
+      .map((line) => {
+        const flavor = flavorLabel(line.flavorName);
+        const src = escapeHtml(lineImage(photos, line));
+        const productId = escapeHtml(line.productId);
+        const flavorId = escapeHtml(line.flavorId);
+        return `
+          <article class="flex gap-4 rounded-3xl border border-line bg-panel p-4">
+            <img src="${src}" alt="" width="96" height="96" class="h-24 w-24 shrink-0 rounded-2xl bg-raised object-contain p-2" />
+            <div class="min-w-0 flex-1">
+              <h2 class="font-bold leading-snug">${escapeHtml(line.name)}</h2>
+              ${flavor ? `<p class="mt-1 text-sm text-fog">${escapeHtml(flavor)}</p>` : ""}
+              <p class="mt-2 font-extrabold text-acid">${formatARS(line.transferPrice)}</p>
+              <div class="mt-3 flex flex-wrap items-center gap-2">
+                <button type="button" data-qty="-1" data-product="${productId}" data-flavor="${flavorId}" class="h-9 w-9 rounded-full border border-line font-bold hover:border-acid" aria-label="Bajar cantidad">−</button>
+                <span class="min-w-6 text-center font-bold">${line.quantity}</span>
+                <button type="button" data-qty="1" data-product="${productId}" data-flavor="${flavorId}" class="h-9 w-9 rounded-full border border-line font-bold hover:border-acid" aria-label="Subir cantidad">+</button>
+                <button type="button" data-remove data-product="${productId}" data-flavor="${flavorId}" class="ml-auto text-sm font-semibold text-fog hover:text-warn">Quitar</button>
+              </div>
+            </div>
+          </article>`;
+      })
+      .join("");
+
+    body.innerHTML = `
+      <div class="grid gap-3">${cards}</div>
+      <div class="mt-6 rounded-3xl border border-line bg-panel p-6">
+        <p class="font-extrabold text-4xl text-acid">${formatARS(totals.transferPrice)}</p>
+        <p class="mt-1 text-sm uppercase tracking-[0.14em] text-fog">Total transferencia o efectivo</p>
+        <p class="mt-3 text-paper/60">Total de lista ${formatARS(totals.price)}</p>
+        <a data-order-wa href="${escapeHtml(orderHref(phone, lines))}" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-acid px-5 py-3 text-sm font-extrabold uppercase tracking-[0.12em] text-ink transition hover:bg-paper">Enviar pedido por WhatsApp</a>
+        <p class="mt-3 text-xs text-fog">Te respondemos por WhatsApp para coordinar el pago y la entrega.</p>
+      </div>`;
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    const root = document.querySelector<HTMLElement>("[data-order]");
+    if (!root || root.dataset.bound === "1") return;
+    root.dataset.bound = "1";
+    renderOrder();
+
+    root.addEventListener("click", (event) => {
+      const target = (event.target as Element | null)?.closest<HTMLButtonElement>(
+        "[data-qty], [data-remove]",
+      );
+      if (!target) return;
+      const productId = target.dataset.product ?? "";
+      const flavorId = target.dataset.flavor ?? "";
+      if (target.hasAttribute("data-remove")) {
+        removeLine(productId, flavorId);
+        return;
+      }
+      const delta = Number(target.dataset.qty);
+      const line = readOrder().find(
+        (item) => item.productId === productId && item.flavorId === flavorId,
+      );
+      if (!line || !Number.isFinite(delta) || line.quantity + delta < 1) return;
+      setQuantity(productId, flavorId, line.quantity + delta);
+    });
+  });
+
+  document.addEventListener("sasu-order", renderOrder);
+</script>

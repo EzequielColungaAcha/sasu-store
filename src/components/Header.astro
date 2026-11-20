@@ -31,6 +31,14 @@ const consult = whatsappHref(
       <a href="/#catalogo" class="rounded-full px-3 py-2 text-paper/90 hover:bg-raised hover:text-acid">
         Productos
       </a>
+      <a href="/pedido" class="rounded-full px-3 py-2 text-paper/90 hover:bg-raised hover:text-acid">
+        Pedido
+        <span
+          data-order-count
+          hidden
+          class="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-acid px-1.5 text-xs font-extrabold text-ink"
+        ></span>
+      </a>
       <a
         href={consult}
         target="_blank"
@@ -42,3 +50,18 @@ const consult = whatsappHref(
     </nav>
   </div>
 </header>
+
+<script>
+  import { orderCount, readOrder } from "../lib/cart";
+
+  const paintOrderCount = () => {
+    const badge = document.querySelector<HTMLElement>("[data-order-count]");
+    if (!badge) return;
+    const count = orderCount(readOrder());
+    badge.textContent = String(count);
+    badge.hidden = count === 0;
+  };
+
+  document.addEventListener("astro:page-load", paintOrderCount);
+  document.addEventListener("sasu-order", paintOrderCount);
+</script>
