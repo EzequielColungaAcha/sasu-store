@@ -1,0 +1,1 @@
+import{a as e,n as t}from"./cart.CO6tjIz8.js";var n=()=>{let n=document.querySelector(`[data-order-count]`);if(!n)return;let r=t(e());n.textContent=String(r),n.hidden=r===0};document.addEventListener(`astro:page-load`,n),document.addEventListener(`sasu-order`,n);
